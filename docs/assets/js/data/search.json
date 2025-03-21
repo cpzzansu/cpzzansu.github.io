@@ -1,5 +1,13 @@
 [
   {
+    "title": "깃 블로그를 처음 만들었다.",
+    "url": "/posts/%EC%B2%98%EC%9D%8C%EC%9C%BC%EB%A1%9C%EC%93%B0%EB%8A%94%EA%B9%83%EB%B8%94%EB%A1%9C%EA%B7%B8/",
+    "categories": "Development Skills, Diary",
+    "tags": "시작, 깃, 블로그, start, git, blog",
+    "date": "2023-03-21 09:00:00 +0900",
+    "content": "쉬울 줄 알았는데... 생각보다 어렵네..."
+  },
+  {
     "title": "Customize the Favicon",
     "url": "/posts/customize-the-favicon/",
     "categories": "Blogging, Tutorial",
