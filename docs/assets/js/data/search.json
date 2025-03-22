@@ -1,5 +1,13 @@
 [
   {
+    "title": "<독서노트>실리콘밸리의 팀장들(1)",
+    "url": "/posts/team-leaders-of-sillicon-valley-1/",
+    "categories": "독서노트, 실리콘밸리의 팀장들",
+    "tags": "실리콘밸리의 팀장들, 킴 스콧, kim scott, 독서노트, 기록, 생각",
+    "date": "2023-03-23 02:00:00 +0900",
+    "content": "실리콘밸리의 팀장들 0-76페이지까지 읽고 쓰는 독서 노트"
+  },
+  {
     "title": "securityFilterChain 설정",
     "url": "/posts/spring-boot-security/",
     "categories": "SpringBoot, Security",
