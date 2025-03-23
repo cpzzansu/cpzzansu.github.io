@@ -6,6 +6,7 @@ author: author_js
 date: 2023-03-23 22:00:00 +0900
 categories: [React Native Expo, 귤톡]
 tags: [react, native, expo, jwt, token, 검증]
+pin: true
 ---
 ## React Native에서 JWT 토큰의 클라이언트 검증 로직 추가하기
 
