@@ -3,7 +3,7 @@ title: securityFilterChain 설정
 description: >-
   스프링 부트 security config 설정(1)
 author: author_js
-date: 2023-03-22 23:00:00 +0900
+date: 2025-03-22 23:00:00 +0900
 categories: [SpringBoot, Security]
 tags: [스프링, 스프링부트, 보안, 필터, spring, springboot, filter, chain, setting, config]
 pin: true

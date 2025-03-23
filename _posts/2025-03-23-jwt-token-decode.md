@@ -3,7 +3,7 @@ title: React Native Expo에서 JWT 토큰 검증하기
 description: >-
   JWT 토큰의 검증이 필요할 때, 토큰을 서버로 보내서 검증할 것인가? 아니면 클라이언트에서 검증해서 바로 로그인페이지로 보낼 것인가? 그것이 문제로다
 author: author_js
-date: 2023-03-23 22:00:00 +0900
+date: 2025-03-23 22:00:00 +0900
 categories: [React Native Expo, 귤톡]
 tags: [react, native, expo, jwt, token, 검증]
 pin: true

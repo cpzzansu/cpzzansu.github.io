@@ -4,7 +4,7 @@
     "url": "/posts/jwt-token-decode/",
     "categories": "React Native Expo, 귤톡",
     "tags": "react, native, expo, jwt, token, 검증",
-    "date": "2023-03-23 22:00:00 +0900",
+    "date": "2025-03-23 22:00:00 +0900",
     "content": "JWT 토큰의 검증이 필요할 때, 토큰을 서버로 보내서 검증할 것인가? 아니면 클라이언트에서 검증해서 바로 로그인페이지로 보낼 것인가? 그것이 문제로다"
   },
   {
@@ -12,7 +12,7 @@
     "url": "/posts/team-leaders-of-sillicon-valley-1/",
     "categories": "독서노트, 실리콘밸리의 팀장들",
     "tags": "실리콘밸리의 팀장들, 킴 스콧, kim scott, 독서노트, 기록, 생각",
-    "date": "2023-03-23 02:00:00 +0900",
+    "date": "2025-03-23 02:00:00 +0900",
     "content": "실리콘밸리의 팀장들 0-76페이지까지 읽고 쓰는 독서 노트"
   },
   {
@@ -20,7 +20,7 @@
     "url": "/posts/spring-boot-security/",
     "categories": "SpringBoot, Security",
     "tags": "스프링, 스프링부트, 보안, 필터, spring, springboot, filter, chain, setting, config",
-    "date": "2023-03-22 23:00:00 +0900",
+    "date": "2025-03-22 23:00:00 +0900",
     "content": "스프링 부트 security config 설정(1)"
   },
   {
@@ -28,7 +28,7 @@
     "url": "/posts/%EC%B2%98%EC%9D%8C%EC%9C%BC%EB%A1%9C%EC%93%B0%EB%8A%94%EA%B9%83%EB%B8%94%EB%A1%9C%EA%B7%B8/",
     "categories": "Development Skills, Diary",
     "tags": "시작, 깃, 블로그, start, git, blog",
-    "date": "2023-03-21 09:00:00 +0900",
+    "date": "2025-03-21 09:00:00 +0900",
     "content": "쉬울 줄 알았는데... 생각보다 어렵네..."
   },
   {
