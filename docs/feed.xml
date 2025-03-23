@@ -4,7 +4,7 @@
   <id>https://cpzzansu.github.io/</id>
   <title>js tech blog</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-03-23T23:28:27+09:00</updated>
+  <updated>2025-03-24T00:35:49+09:00</updated>
   <author>
     <name>김준수</name>
     <uri>https://cpzzansu.github.io/</uri>
@@ -20,11 +20,37 @@
 
   
   <entry>
+    <title>귤톡 개발일지 - 채팅방 데이터 설계 변경 이야기</title>
+    <link href="https://cpzzansu.github.io/posts/develop-diary-gyooltalk/" rel="alternate" type="text/html" title="귤톡 개발일지 - 채팅방 데이터 설계 변경 이야기" />
+    <published>2025-03-24T00:30:00+09:00</published>
+  
+    <updated>2025-03-24T00:30:00+09:00</updated>
+  
+    <id>https://cpzzansu.github.io/posts/develop-diary-gyooltalk/</id>
+    <content type="text/html" src="https://cpzzansu.github.io/posts/develop-diary-gyooltalk/" />
+    <author>
+      <name>author_js</name>
+    </author>
+
+  
+    
+    <category term="React Native Expo" />
+    
+    <category term="귤톡" />
+    
+  
+
+  <summary>데이터 설계 변경의 무서움</summary>
+
+  </entry>
+
+  
+  <entry>
     <title>React Native Expo에서 JWT 토큰 검증하기</title>
     <link href="https://cpzzansu.github.io/posts/jwt-token-decode/" rel="alternate" type="text/html" title="React Native Expo에서 JWT 토큰 검증하기" />
     <published>2025-03-23T22:00:00+09:00</published>
   
-    <updated>2025-03-23T23:05:49+09:00</updated>
+    <updated>2025-03-23T23:28:31+09:00</updated>
   
     <id>https://cpzzansu.github.io/posts/jwt-token-decode/</id>
     <content type="text/html" src="https://cpzzansu.github.io/posts/jwt-token-decode/" />
@@ -50,7 +76,7 @@
     <link href="https://cpzzansu.github.io/posts/team-leaders-of-sillicon-valley-1/" rel="alternate" type="text/html" title="&amp;lt;독서노트&amp;gt;실리콘밸리의 팀장들(1)" />
     <published>2025-03-23T02:00:00+09:00</published>
   
-    <updated>2025-03-23T03:12:31+09:00</updated>
+    <updated>2025-03-23T23:28:31+09:00</updated>
   
     <id>https://cpzzansu.github.io/posts/team-leaders-of-sillicon-valley-1/</id>
     <content type="text/html" src="https://cpzzansu.github.io/posts/team-leaders-of-sillicon-valley-1/" />
@@ -76,7 +102,7 @@
     <link href="https://cpzzansu.github.io/posts/spring-boot-security/" rel="alternate" type="text/html" title="securityFilterChain 설정" />
     <published>2025-03-22T23:00:00+09:00</published>
   
-    <updated>2025-03-22T23:00:00+09:00</updated>
+    <updated>2025-03-23T23:28:31+09:00</updated>
   
     <id>https://cpzzansu.github.io/posts/spring-boot-security/</id>
     <content type="text/html" src="https://cpzzansu.github.io/posts/spring-boot-security/" />
@@ -102,7 +128,7 @@
     <link href="https://cpzzansu.github.io/posts/%EC%B2%98%EC%9D%8C%EC%9C%BC%EB%A1%9C%EC%93%B0%EB%8A%94%EA%B9%83%EB%B8%94%EB%A1%9C%EA%B7%B8/" rel="alternate" type="text/html" title="깃 블로그를 처음 만들었다." />
     <published>2025-03-21T09:00:00+09:00</published>
   
-    <updated>2025-03-21T22:06:53+09:00</updated>
+    <updated>2025-03-23T23:28:31+09:00</updated>
   
     <id>https://cpzzansu.github.io/posts/%EC%B2%98%EC%9D%8C%EC%9C%BC%EB%A1%9C%EC%93%B0%EB%8A%94%EA%B9%83%EB%B8%94%EB%A1%9C%EA%B7%B8/</id>
     <content type="text/html" src="https://cpzzansu.github.io/posts/%EC%B2%98%EC%9D%8C%EC%9C%BC%EB%A1%9C%EC%93%B0%EB%8A%94%EA%B9%83%EB%B8%94%EB%A1%9C%EA%B7%B8/" />
@@ -119,32 +145,6 @@
   
 
   <summary>쉬울 줄 알았는데... 생각보다 어렵네...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Customize the Favicon</title>
-    <link href="https://cpzzansu.github.io/posts/customize-the-favicon/" rel="alternate" type="text/html" title="Customize the Favicon" />
-    <published>2019-08-11T01:34:00+09:00</published>
-  
-    <updated>2019-08-11T01:34:00+09:00</updated>
-  
-    <id>https://cpzzansu.github.io/posts/customize-the-favicon/</id>
-    <content type="text/html" src="https://cpzzansu.github.io/posts/customize-the-favicon/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Tutorial" />
-    
-  
-
-  <summary>The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.  Generate the favicon  Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and then go to the online tool Real Favicon Generator and click the button Select your Favicon image ...</summary>
 
   </entry>
 

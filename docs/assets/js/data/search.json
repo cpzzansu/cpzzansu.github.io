@@ -1,5 +1,13 @@
 [
   {
+    "title": "귤톡 개발일지 - 채팅방 데이터 설계 변경 이야기",
+    "url": "/posts/develop-diary-gyooltalk/",
+    "categories": "React Native Expo, 귤톡",
+    "tags": "react, native, expo, 귤톡, 데이터베이스, database, mongodb, 채팅, 앱, 모바일, 설계",
+    "date": "2025-03-24 00:30:00 +0900",
+    "content": "데이터 설계 변경의 무서움"
+  },
+  {
     "title": "React Native Expo에서 JWT 토큰 검증하기",
     "url": "/posts/jwt-token-decode/",
     "categories": "React Native Expo, 귤톡",
