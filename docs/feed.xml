@@ -4,7 +4,7 @@
   <id>https://cpzzansu.github.io/</id>
   <title>js tech blog</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-03-23T03:12:26+09:00</updated>
+  <updated>2025-03-23T23:03:10+09:00</updated>
   <author>
     <name>김준수</name>
     <uri>https://cpzzansu.github.io/</uri>
@@ -20,11 +20,37 @@
 
   
   <entry>
+    <title>React Native Expo에서 JWT 토큰 검증하기</title>
+    <link href="https://cpzzansu.github.io/posts/jwt-token-decode/" rel="alternate" type="text/html" title="React Native Expo에서 JWT 토큰 검증하기" />
+    <published>2023-03-23T22:00:00+09:00</published>
+  
+    <updated>2023-03-23T22:00:00+09:00</updated>
+  
+    <id>https://cpzzansu.github.io/posts/jwt-token-decode/</id>
+    <content type="text/html" src="https://cpzzansu.github.io/posts/jwt-token-decode/" />
+    <author>
+      <name>author_js</name>
+    </author>
+
+  
+    
+    <category term="React Native Expo" />
+    
+    <category term="귤톡" />
+    
+  
+
+  <summary>JWT 토큰의 검증이 필요할 때, 토큰을 서버로 보내서 검증할 것인가? 아니면 클라이언트에서 검증해서 바로 로그인페이지로 보낼 것인가? 그것이 문제로다</summary>
+
+  </entry>
+
+  
+  <entry>
     <title><독서노트>실리콘밸리의 팀장들(1)</title>
     <link href="https://cpzzansu.github.io/posts/team-leaders-of-sillicon-valley-1/" rel="alternate" type="text/html" title="&amp;lt;독서노트&amp;gt;실리콘밸리의 팀장들(1)" />
     <published>2023-03-23T02:00:00+09:00</published>
   
-    <updated>2023-03-23T02:00:00+09:00</updated>
+    <updated>2025-03-23T03:12:31+09:00</updated>
   
     <id>https://cpzzansu.github.io/posts/team-leaders-of-sillicon-valley-1/</id>
     <content type="text/html" src="https://cpzzansu.github.io/posts/team-leaders-of-sillicon-valley-1/" />
@@ -119,32 +145,6 @@
   
 
   <summary>The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.  Generate the favicon  Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and then go to the online tool Real Favicon Generator and click the button Select your Favicon image ...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Getting Started</title>
-    <link href="https://cpzzansu.github.io/posts/getting-started/" rel="alternate" type="text/html" title="Getting Started" />
-    <published>2019-08-09T21:55:00+09:00</published>
-  
-    <updated>2019-08-09T21:55:00+09:00</updated>
-  
-    <id>https://cpzzansu.github.io/posts/getting-started/</id>
-    <content type="text/html" src="https://cpzzansu.github.io/posts/getting-started/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Tutorial" />
-    
-  
-
-  <summary>Get started with Chirpy basics in this comprehensive overview. You will learn how to install, configure, and use your first Chirpy-based website, as well as deploy it to a web server.</summary>
 
   </entry>
 
