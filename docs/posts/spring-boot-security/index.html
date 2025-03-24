@@ -37,8 +37,8 @@
 <meta property="og:title" content="securityFilterChain 설정" />
 <meta name="author" content="김준수" />
 <meta property="og:locale" content="ko_KR" />
-<meta name="description" content="스프링 부트 security config 설정(1)" />
-<meta property="og:description" content="스프링 부트 security config 설정(1)" />
+<meta name="description" content="스프링 부트 security config 설정" />
+<meta property="og:description" content="스프링 부트 security config 설정" />
 <link rel="canonical" href="https://cpzzansu.github.io/posts/spring-boot-security/" />
 <meta property="og:url" content="https://cpzzansu.github.io/posts/spring-boot-security/" />
 <meta property="og:site_name" content="js tech blog" />
@@ -49,7 +49,7 @@
 <meta name="twitter:site" content="@twitter_username" />
 <meta name="twitter:creator" content="@_" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"김준수","url":"https://github.com/cpzzansu"},"dateModified":"2025-03-23T23:28:31+09:00","datePublished":"2025-03-22T23:00:00+09:00","description":"스프링 부트 security config 설정(1)","headline":"securityFilterChain 설정","mainEntityOfPage":{"@type":"WebPage","@id":"https://cpzzansu.github.io/posts/spring-boot-security/"},"url":"https://cpzzansu.github.io/posts/spring-boot-security/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"김준수","url":"https://github.com/cpzzansu"},"dateModified":"2025-03-23T23:28:31+09:00","datePublished":"2025-03-22T23:00:00+09:00","description":"스프링 부트 security config 설정","headline":"securityFilterChain 설정","mainEntityOfPage":{"@type":"WebPage","@id":"https://cpzzansu.github.io/posts/spring-boot-security/"},"url":"https://cpzzansu.github.io/posts/spring-boot-security/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -660,7 +660,7 @@
   <header>
     <h1 data-toc-skip>securityFilterChain 설정</h1>
     
-      <p class="post-desc fw-light mb-4">스프링 부트 security config 설정(1)</p>
+      <p class="post-desc fw-light mb-4">스프링 부트 security config 설정</p>
     
 
     <div class="post-meta text-muted">
@@ -758,7 +758,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1247 단어"
+  title="1246 단어"
 >
   <em>6 분</em>읽는 시간</span>
 
@@ -792,7 +792,7 @@
   
 
   <div class="content">
-    <h1 id="스프링-부트-security-설정법-1">스프링 부트 Security 설정법 (1)</h1>
+    <h1 id="스프링-부트-security-설정법">스프링 부트 Security 설정법</h1>
 <blockquote>
   <p>스프링 부트의 Security 설정에 대해서 알아보자.</p>
 </blockquote>
@@ -916,8 +916,8 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
       <div class="post-meta mb-3">
         <i class="far fa-folder-open fa-fw me-1"></i>
         
-          <a href="/categories/springboot/">SpringBoot</a>,
-          <a href="/categories/security/">Security</a>
+          <a href="/categories/java/">JAVA</a>,
+          <a href="/categories/spring-boot/">Spring Boot</a>
       </div>
     
 
@@ -1079,6 +1079,13 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/spring-boot-security-custom-filter/">JwtAuthenticationFilter를 이용한 Spring Security JWT 인증 필터 설정 방법</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/mapstruct/">MapStruct를 이용한 DTO 매핑 자동화(feat.관심사의 분리)</a>
         </li>
       
@@ -1101,13 +1108,6 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
         
         <li class="text-truncate lh-lg">
           <a href="/posts/spring-boot-security/">securityFilterChain 설정</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/team-leaders-of-sillicon-valley-1/"><독서노트>실리콘밸리의 팀장들(1)</a>
         </li>
       
     </ul>
@@ -1171,10 +1171,6 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     
     
     
-      
-        
-        
-
   
     
     
@@ -1184,38 +1180,6 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1272,223 +1236,10 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     
     
     
-      
-        
-        
-
   
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1544,8 +1295,6 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     
     
     
-      
-    
   
     
     
@@ -1601,14 +1350,20 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     
     
     
-      
+  
+    
+    
+    
     
   
     
     
     
     
-      
+  
+    
+    
+    
     
   
     
@@ -1751,6 +1506,86 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -1808,6 +1643,36 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -1816,6 +1681,262 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     
     
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
     
   
     
@@ -1864,6 +1985,22 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1878,6 +2015,52 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     
     
     
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
     
   
     
@@ -1930,10 +2113,6 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     
     
     
-      
-        
-        
-
   
     
     
@@ -1946,39 +2125,25 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     
     
     
-      
-        
-        
-
   
     
     
     
-    
-      
     
   
     
     
     
     
-      
-    
   
     
     
     
     
-      
-        
-        
-
   
     
     
     
-    
-      
     
   
     
@@ -1992,7 +2157,193 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     
     
     
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -2010,15 +2361,6 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/expo/">expo</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/native/">native</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/react/">react</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/spring/">spring</a>
       
         
@@ -2028,16 +2370,25 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
         <a class="post-tag btn btn-outline-primary" href="/tags/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8/">스프링부트</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/blog/">blog</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/boot/">boot</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/chain/">chain</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/expo/">expo</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/config/">config</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/filter/">filter</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/java/">java</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/native/">native</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/react/">react</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/%EC%9E%90%EB%B0%94/">자바</a>
       
     </div>
   </section>
@@ -2097,19 +2448,31 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
 
@@ -2123,6 +2486,34 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
   <aside id="related-posts" aria-labelledby="related-label">
     <h3 class="mb-4" id="related-label">관련된 글</h3>
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/spring-boot-security-custom-filter/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1742834940"
+  data-df="YYYY/MM/DD"
+  
+>
+  2025/03/25
+</time>
+
+              <h4 class="pt-0 my-2">JwtAuthenticationFilter를 이용한 Spring Security JWT 인증 필터 설정 방법</h4>
+              <div class="text-muted">
+                <p>Jwt token 검증 custom 필터 세팅</p>
+              </div>
+            </div>
+          </a>
+        </article>
       
         <article class="col">
           <a href="/posts/mapstruct/" class="post-preview card h-100">
@@ -2288,10 +2679,6 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     
     
     
-      
-        
-        
-
   
     
     
@@ -2301,38 +2688,6 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -2389,223 +2744,10 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     
     
     
-      
-        
-        
-
   
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -2661,8 +2803,6 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     
     
     
-      
-    
   
     
     
@@ -2718,14 +2858,20 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     
     
     
-      
+  
+    
+    
+    
     
   
     
     
     
     
-      
+  
+    
+    
+    
     
   
     
@@ -2868,6 +3014,86 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -2925,6 +3151,36 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -2933,6 +3189,262 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     
     
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
     
   
     
@@ -2981,6 +3493,22 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -2995,6 +3523,52 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     
     
     
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
     
   
     
@@ -3047,10 +3621,6 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     
     
     
-      
-        
-        
-
   
     
     
@@ -3063,39 +3633,25 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     
     
     
-      
-        
-        
-
   
     
     
     
-    
-      
     
   
     
     
     
     
-      
-    
   
     
     
     
     
-      
-        
-        
-
   
     
     
     
-    
-      
     
   
     
@@ -3109,7 +3665,193 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     
     
     
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3127,15 +3869,6 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/expo/">expo</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/native/">native</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/react/">react</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/spring/">spring</a>
       
         
@@ -3145,16 +3878,25 @@ SpringBoot를 이용해서 개발을 하는 것은 처음이었고, 이전에 �
         <a class="post-tag btn btn-outline-primary" href="/tags/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8/">스프링부트</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/blog/">blog</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/boot/">boot</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/chain/">chain</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/expo/">expo</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/config/">config</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/filter/">filter</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/java/">java</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/native/">native</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/react/">react</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/%EC%9E%90%EB%B0%94/">자바</a>
       
     </div>
   </section>

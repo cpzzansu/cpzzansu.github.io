@@ -4,7 +4,7 @@
   <id>https://cpzzansu.github.io/</id>
   <title>js tech blog</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-03-25T01:12:46+09:00</updated>
+  <updated>2025-03-25T02:03:33+09:00</updated>
   <author>
     <name>김준수</name>
     <uri>https://cpzzansu.github.io/</uri>
@@ -17,6 +17,32 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>JwtAuthenticationFilter를 이용한 Spring Security JWT 인증 필터 설정 방법</title>
+    <link href="https://cpzzansu.github.io/posts/spring-boot-security-custom-filter/" rel="alternate" type="text/html" title="JwtAuthenticationFilter를 이용한 Spring Security JWT 인증 필터 설정 방법" />
+    <published>2025-03-25T01:49:00+09:00</published>
+  
+    <updated>2025-03-25T01:49:00+09:00</updated>
+  
+    <id>https://cpzzansu.github.io/posts/spring-boot-security-custom-filter/</id>
+    <content type="text/html" src="https://cpzzansu.github.io/posts/spring-boot-security-custom-filter/" />
+    <author>
+      <name>author_js</name>
+    </author>
+
+  
+    
+    <category term="JAVA" />
+    
+    <category term="Spring Boot" />
+    
+  
+
+  <summary>Jwt token 검증 custom 필터 세팅</summary>
+
+  </entry>
 
   
   <entry>
@@ -119,32 +145,6 @@
   
 
   <summary>실리콘밸리의 팀장들 0-76페이지까지 읽고 쓰는 독서 노트</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>securityFilterChain 설정</title>
-    <link href="https://cpzzansu.github.io/posts/spring-boot-security/" rel="alternate" type="text/html" title="securityFilterChain 설정" />
-    <published>2025-03-22T23:00:00+09:00</published>
-  
-    <updated>2025-03-23T23:28:31+09:00</updated>
-  
-    <id>https://cpzzansu.github.io/posts/spring-boot-security/</id>
-    <content type="text/html" src="https://cpzzansu.github.io/posts/spring-boot-security/" />
-    <author>
-      <name>author_js</name>
-    </author>
-
-  
-    
-    <category term="SpringBoot" />
-    
-    <category term="Security" />
-    
-  
-
-  <summary>스프링 부트 security config 설정(1)</summary>
 
   </entry>
 

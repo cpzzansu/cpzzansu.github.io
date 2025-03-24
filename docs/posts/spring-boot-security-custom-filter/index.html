@@ -34,23 +34,26 @@
 
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="기록" />
+<meta property="og:title" content="JwtAuthenticationFilter를 이용한 Spring Security JWT 인증 필터 설정 방법" />
+<meta name="author" content="김준수" />
 <meta property="og:locale" content="ko_KR" />
-<meta name="description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<meta property="og:description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<link rel="canonical" href="https://cpzzansu.github.io/tags/%EA%B8%B0%EB%A1%9D/" />
-<meta property="og:url" content="https://cpzzansu.github.io/tags/%EA%B8%B0%EB%A1%9D/" />
+<meta name="description" content="Jwt token 검증 custom 필터 세팅" />
+<meta property="og:description" content="Jwt token 검증 custom 필터 세팅" />
+<link rel="canonical" href="https://cpzzansu.github.io/posts/spring-boot-security-custom-filter/" />
+<meta property="og:url" content="https://cpzzansu.github.io/posts/spring-boot-security-custom-filter/" />
 <meta property="og:site_name" content="js tech blog" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-03-25T01:49:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="기록" />
+<meta property="twitter:title" content="JwtAuthenticationFilter를 이용한 Spring Security JWT 인증 필터 설정 방법" />
 <meta name="twitter:site" content="@twitter_username" />
+<meta name="twitter:creator" content="@_" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"기록","url":"https://cpzzansu.github.io/tags/%EA%B8%B0%EB%A1%9D/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"김준수","url":"https://github.com/cpzzansu"},"dateModified":"2025-03-25T01:49:00+09:00","datePublished":"2025-03-25T01:49:00+09:00","description":"Jwt token 검증 custom 필터 세팅","headline":"JwtAuthenticationFilter를 이용한 Spring Security JWT 인증 필터 설정 방법","mainEntityOfPage":{"@type":"WebPage","@id":"https://cpzzansu.github.io/posts/spring-boot-security-custom-filter/"},"url":"https://cpzzansu.github.io/posts/spring-boot-security-custom-filter/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-    <title>기록 | js tech blog
+    <title>JwtAuthenticationFilter를 이용한 Spring Security JWT 인증 필터 설정 방법 | js tech blog
     </title>
 
     <!--
@@ -114,9 +117,16 @@
     <!-- 3rd-party Dependencies -->
 
     
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.32.2/dist/tocbot.min.css">
     
 
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
+    
+
+    
+    <!-- Image Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css">
     
 
     <!-- Scripts -->
@@ -132,6 +142,13 @@
 <!-- layout specified -->
 
 
+  
+
+  
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
+
 
 
 
@@ -181,9 +198,37 @@
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/dayjs@1.11.13/dayjs.min.js,npm/dayjs@1.11.13/locale/ko.js,npm/dayjs@1.11.13/plugin/relativeTime.js,npm/dayjs@1.11.13/plugin/localizedFormat.js"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.13/dayjs.min.js,npm/dayjs@1.11.13/locale/ko.js,npm/dayjs@1.11.13/plugin/relativeTime.js,npm/dayjs@1.11.13/plugin/localizedFormat.js,npm/tocbot@4.32.2/dist/tocbot.min.js"></script>
 
 
 
@@ -191,11 +236,15 @@
 
 
 
-<script defer src="/assets/js/dist/misc.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 
 <!-- Pageviews -->
+
+  
+
+  
 
 
 
@@ -394,14 +443,10 @@
           
         
           
-            <span>
-              <a href="/tags/">태그</a>
-            </span>
-          
         
           
             
-              <span>기록</span>
+              <span>JwtAuthenticationFilter를 이용한 Spring Security JWT 인증 필터 설정 방법</span>
             
 
           
@@ -415,7 +460,7 @@
     </button>
 
     <div id="topbar-title">
-      태그
+      포스트
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link" aria-label="Search">
@@ -441,27 +486,166 @@
         <div class="row flex-grow-1">
           <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
             
-              
+              <!-- Refactor the HTML structure -->
 
 
 
-<article class="px-1">
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
+-->
+
+
+
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+-->
+
+
+
+<!-- Change the icon of checkbox -->
+
+
+
+<!-- Handle images -->
+
+
+
+
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
+
+
+
+
+
+  
+  
+
+  
+
+  
+  
+
   
     
-
-
-
-<div id="page-tag">
-  <h1 class="ps-lg-2">
-    <i class="fa fa-tag fa-fw text-muted"></i>
-    기록
-    <span class="lead text-muted ps-2">1</span>
-  </h1>
-  <ul class="content ps-0">
     
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/posts/team-leaders-of-sillicon-valley-1/"><독서노트>실리콘밸리의 팀장들(1)</a>
-        <span class="dash flex-grow-1"></span>
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+<!-- return -->
+
+
+
+
+
+
+
+
+
+
+<article class="px-1" data-toc="true">
+  <header>
+    <h1 data-toc-skip>JwtAuthenticationFilter를 이용한 Spring Security JWT 인증 필터 설정 방법</h1>
+    
+      <p class="post-desc fw-light mb-4">Jwt token 검증 custom 필터 세팅</p>
+    
+
+    <div class="post-meta text-muted">
+      <!-- published date -->
+      <span>
+        게시
         <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
@@ -472,22 +656,346 @@
 
 <time
   
-    class="text-muted small text-nowrap"
-  
-  data-ts="1742662800"
+  data-ts="1742834940"
   data-df="YYYY/MM/DD"
   
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
 >
-  2025/03/23
+  2025/03/25
 </time>
 
-      </li>
-    
-  </ul>
-</div>
+      </span>
+
+      <!-- lastmod date -->
+      
+
+      
+
+      <div class="d-flex justify-content-between">
+        <!-- author(s) -->
+        <span>
+          
+
+          By
+
+          <em>
+            
+              
+                <a href="https://github.com/cpzzansu">김준수</a>
+                
+              
+            
+          </em>
+        </span>
+
+        <div>
+          <!-- pageviews -->
+          
+
+          <!-- read time -->
+          <!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+
+
+<!-- words per minute -->
+
+
+
+
+
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="487 단어"
+>
+  <em>2 분</em>읽는 시간</span>
+
+        </div>
+      </div>
+    </div>
+  </header>
 
   
+    <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
+      <span class="label text-truncate">JwtAuthenticationFilter를 이용한 Spring Security JWT 인증 필터 설정 방법</span>
+      <button type="button" class="toc-trigger btn me-1">
+        <i class="fa-solid fa-list-ul fa-fw"></i>
+      </button>
+    </div>
+
+    <button id="toc-solo-trigger" type="button" class="toc-trigger btn btn-outline-secondary btn-sm">
+      <span class="label ps-2 pe-1">바로가기</span>
+      <i class="fa-solid fa-angle-right fa-fw"></i>
+    </button>
+
+    <dialog id="toc-popup" class="p-0">
+      <div class="header d-flex flex-row align-items-center justify-content-between">
+        <div class="label text-truncate py-2 ms-4">JwtAuthenticationFilter를 이용한 Spring Security JWT 인증 필터 설정 방법</div>
+        <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
+          <i class="fas fa-close"></i>
+        </button>
+      </div>
+      <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
+    </dialog>
+  
+
+  <div class="content">
+    <p>Spring Boot와 Spring Security를 사용하여 JWT 토큰을 서버에서 인증하는 방법에 대해서 알아보도록 하겠습니다.</p>
+
+<h3 id="1-jwtauthenticationfilter-이해하기"><span class="me-2">1. JwtAuthenticationFilter 이해하기</span><a href="#1-jwtauthenticationfilter-이해하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p><code class="language-plaintext highlighter-rouge">JwtAuthenticationFilter</code>는 JWT 토큰을 검증하여 사용자를 인증하는 역할을 하는 필터입니다. 이 필터는 모든 요청을 가로채어, 요청 헤더에 JWT가 포함되었는지 확인하고 토큰이 유효한 경우 사용자를 인증합니다.</p>
+
+<h3 id="2-jwtauthenticationfilter-클래스-구성"><span class="me-2">2. JwtAuthenticationFilter 클래스 구성</span><a href="#2-jwtauthenticationfilter-클래스-구성" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p><code class="language-plaintext highlighter-rouge">JwtAuthenticationFilter</code>는 다음과 같은 주요 작업을 수행합니다:</p>
+
+<ul>
+  <li>
+    <p>HTTP 요청에서 JWT 추출</p>
+  </li>
+  <li>
+    <p>JWT 유효성 검증</p>
+  </li>
+  <li>
+    <p>사용자 정보 로드 및 인증 처리</p>
+  </li>
+</ul>
+
+<h3 id="3-securityconfig-설정"><span class="me-2">3. SecurityConfig 설정</span><a href="#3-securityconfig-설정" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>Spring Security 설정에서 <code class="language-plaintext highlighter-rouge">JwtAuthenticationFilter</code>를 등록합니다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+</pre></td><td class="rouge-code"><pre>@Configuration
+@EnableWebSecurity
+public class SecurityConfig {
+
+    public static final String[] AUTH_WHITELIST = {
+        "/auth/**",
+        "/public/**"
+    };
+
+    private final JwtTokenProvider jwtTokenProvider;
+    private final UserDetailsService userDetailsService;
+
+    public SecurityConfig(JwtTokenProvider jwtTokenProvider, UserDetailsService userDetailsService) {
+        this.jwtTokenProvider = jwtTokenProvider;
+        this.userDetailsService = userDetailsService;
+    }
+
+    @Bean
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        http.csrf(AbstractHttpConfigurer::disable)
+            .authorizeHttpRequests(auth -&gt; auth
+                .requestMatchers(AUTH_WHITELIST).permitAll()
+                .anyRequest().authenticated()
+            )
+            .sessionManagement(session -&gt; session
+                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+            )
+            .addFilterBefore(new JwtAuthenticationFilter(jwtTokenProvider, userDetailsService), UsernamePasswordAuthenticationFilter.class);
+
+        return http.build();
+    }
+}
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="4-jwttokenprovider-작성"><span class="me-2">4. JwtTokenProvider 작성</span><a href="#4-jwttokenprovider-작성" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>토큰의 생성, 검증, 사용자 이름 추출 등을 담당하는 <code class="language-plaintext highlighter-rouge">JwtTokenProvider</code>를 작성합니다.</p>
+
+<h3 id="5-실행-및-테스트"><span class="me-2">5. 실행 및 테스트</span><a href="#5-실행-및-테스트" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>이제 서버를 실행하고, 프론트 엔드에서 API 요청을 보낼때 JWT 토큰을 담아 보내 정상적으로 토큰을 검증하는지 확인을 하면 됩니다. Request Header에 아래와 같이 토큰을 넣어 보내면 됩니다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>Authorization: Bearer {토큰값}
+</pre></td></tr></tbody></table></code></div></div>
+
+<h3 id="결론"><span class="me-2">결론</span><a href="#결론" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<p>이렇게 설정하면 서버에서 JWT 토큰을 검증에 성공한 요청만 컨트롤러에 연결이 되게 됩니다. 검증이 필요없는 요청들은 AUTH_WHITELIST에 세팅해서 검증없이 요청을 승인하도록 하면 됩니다.</p>
+
+  </div>
+
+  <div class="post-tail-wrapper text-muted">
+    <!-- categories -->
+    
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
+        
+          <a href="/categories/java/">JAVA</a>,
+          <a href="/categories/spring-boot/">Spring Boot</a>
+      </div>
+    
+
+    <!-- tags -->
+    
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw me-1"></i>
+        
+          <a
+            href="/tags/java/"
+            class="post-tag no-text-decoration"
+          >java</a>
+        
+          <a
+            href="/tags/spring/"
+            class="post-tag no-text-decoration"
+          >spring</a>
+        
+          <a
+            href="/tags/boot/"
+            class="post-tag no-text-decoration"
+          >boot</a>
+        
+          <a
+            href="/tags/%EC%9E%90%EB%B0%94/"
+            class="post-tag no-text-decoration"
+          >자바</a>
+        
+          <a
+            href="/tags/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8/"
+            class="post-tag no-text-decoration"
+          >스프링부트</a>
+        
+          <a
+            href="/tags/%EC%8A%A4%ED%94%84%EB%A7%81/"
+            class="post-tag no-text-decoration"
+          >스프링</a>
+        
+          <a
+            href="/tags/security/"
+            class="post-tag no-text-decoration"
+          >security</a>
+        
+          <a
+            href="/tags/jwt/"
+            class="post-tag no-text-decoration"
+          >JWT</a>
+        
+          <a
+            href="/tags/filter/"
+            class="post-tag no-text-decoration"
+          >filter</a>
+        
+      </div>
+    
+
+    <div
+      class="
+        post-tail-bottom
+        d-flex justify-content-between align-items-center mt-5 pb-2
+      "
+    >
+      <div class="license-wrapper">
+        
+          
+
+          이 기사는 저작권자의 
+        <a href="https://creativecommons.org/licenses/by/4.0/">
+          CC BY 4.0
+        </a>
+         라이센스를 따릅니다.
+        
+      </div>
+
+      <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted">공유하기</span>
+  <span class="share-icons">
+    
+    
+    
+
+    
+
+      
+
+      <a href="https://twitter.com/intent/tweet?text=JwtAuthenticationFilter%EB%A5%BC%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20Spring%20Security%20JWT%20%EC%9D%B8%EC%A6%9D%20%ED%95%84%ED%84%B0%20%EC%84%A4%EC%A0%95%20%EB%B0%A9%EB%B2%95%20-%20js%20tech%20blog&url=https%3A%2F%2Fcpzzansu.github.io%2Fposts%2Fspring-boot-security-custom-filter%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+        <i class="fa-fw fa-brands fa-square-x-twitter"></i>
+      </a>
+    
+
+      
+
+      <a href="https://www.facebook.com/sharer/sharer.php?title=JwtAuthenticationFilter%EB%A5%BC%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20Spring%20Security%20JWT%20%EC%9D%B8%EC%A6%9D%20%ED%95%84%ED%84%B0%20%EC%84%A4%EC%A0%95%20%EB%B0%A9%EB%B2%95%20-%20js%20tech%20blog&u=https%3A%2F%2Fcpzzansu.github.io%2Fposts%2Fspring-boot-security-custom-filter%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+        <i class="fa-fw fab fa-facebook-square"></i>
+      </a>
+    
+
+      
+
+      <a href="https://t.me/share/url?url=https%3A%2F%2Fcpzzansu.github.io%2Fposts%2Fspring-boot-security-custom-filter%2F&text=JwtAuthenticationFilter%EB%A5%BC%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20Spring%20Security%20JWT%20%EC%9D%B8%EC%A6%9D%20%ED%95%84%ED%84%B0%20%EC%84%A4%EC%A0%95%20%EB%B0%A9%EB%B2%95%20-%20js%20tech%20blog" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+        <i class="fa-fw fab fa-telegram"></i>
+      </a>
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="링크 복사하기"
+      data-title-succeed="링크가 복사되었습니다!"
+    >
+      <i class="fa-fw fas fa-link pe-none fs-6"></i>
+    </button>
+  </span>
+</div>
+
+    </div>
+    <!-- .post-tail-bottom -->
+  </div>
+  <!-- div.post-tail-wrapper -->
 </article>
+
 
             
           </main>
@@ -1836,12 +2344,182 @@
             </div>
 
             
+              
+              
+
+
+
+
+
+
+  <div class="toc-border-cover z-3"></div>
+  <section id="toc-wrapper" class="invisible position-sticky ps-0 pe-4 pb-4">
+    <h2 class="panel-heading ps-3 pb-2 mb-0">바로가기</h2>
+    <nav id="toc"></nav>
+  </section>
+
+
+            
           </aside>
         </div>
 
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+              <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">관련된 글</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/mapstruct/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1742806500"
+  data-df="YYYY/MM/DD"
+  
+>
+  2025/03/24
+</time>
+
+              <h4 class="pt-0 my-2">MapStruct를 이용한 DTO 매핑 자동화(feat.관심사의 분리)</h4>
+              <div class="text-muted">
+                <p>MapStruct를 이용한 DTO 매핑 자동화를 이용해서 우리 한 번 신나게 달려가봐요!</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/spring-boot-security/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1742652000"
+  data-df="YYYY/MM/DD"
+  
+>
+  2025/03/22
+</time>
+
+              <h4 class="pt-0 my-2">securityFilterChain 설정</h4>
+              <div class="text-muted">
+                <p>스프링 부트 security config 설정</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
+
+
+            
+              
+              <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/posts/mapstruct/"
+      class="btn btn-outline-primary"
+      aria-label="이전 글"
+    >
+      <p>MapStruct를 이용한 DTO 매핑 자동화(feat.관심사의 분리)</p>
+    </a>
+  
+
+  
+    <div class="btn btn-outline-primary disabled" aria-label="다음 글">
+      <p>-</p>
+    </div>
+  
+</nav>
+
             
 
             <!-- The Footer -->
@@ -3212,6 +3890,11 @@
     
 
     <!-- Embedded scripts -->
+
+    
+      
+      <!-- The comments switcher -->
+
 
     
 

@@ -1,15 +1,15 @@
 ---
 title: securityFilterChain 설정
 description: >-
-  스프링 부트 security config 설정(1)
+  스프링 부트 security config 설정
 author: author_js
 date: 2025-03-22 23:00:00 +0900
-categories: [SpringBoot, Security]
+categories: [JAVA, Spring Boot]
 tags: [스프링, 스프링부트, 보안, 필터, spring, springboot, filter, chain, setting, config]
 pin: true
 ---
 
-# 스프링 부트 Security 설정법 (1)
+# 스프링 부트 Security 설정법 
 > 스프링 부트의 Security 설정에 대해서 알아보자.
 
 > 나도 정확하겐 모른다. 그냥 내가 하고 있는 설정에 대해서 알아보자!
