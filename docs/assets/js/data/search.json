@@ -1,5 +1,13 @@
 [
   {
+    "title": "MapStruct를 이용한 DTO 매핑 자동화(feat.관심사의 분리)",
+    "url": "/posts/mapstruct/",
+    "categories": "JAVA, Spring Boot",
+    "tags": "java, spring, boot, 자바, 스프링부트, 스프링, JPA, entity, mapStruct, dto",
+    "date": "2025-03-24 17:55:00 +0900",
+    "content": "MapStruct를 이용한 DTO 매핑 자동화를 이용해서 우리 한 번 신나게 달려가봐요!"
+  },
+  {
     "title": "귤톡 개발일지 - 채팅방 데이터 설계 변경 이야기",
     "url": "/posts/develop-diary-gyooltalk/",
     "categories": "React Native Expo, 귤톡",

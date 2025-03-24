@@ -4,7 +4,7 @@
   <id>https://cpzzansu.github.io/</id>
   <title>js tech blog</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-03-24T17:51:22+09:00</updated>
+  <updated>2025-03-24T17:59:43+09:00</updated>
   <author>
     <name>김준수</name>
     <uri>https://cpzzansu.github.io/</uri>
@@ -17,6 +17,32 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>MapStruct를 이용한 DTO 매핑 자동화(feat.관심사의 분리)</title>
+    <link href="https://cpzzansu.github.io/posts/mapstruct/" rel="alternate" type="text/html" title="MapStruct를 이용한 DTO 매핑 자동화(feat.관심사의 분리)" />
+    <published>2025-03-24T17:55:00+09:00</published>
+  
+    <updated>2025-03-24T17:55:00+09:00</updated>
+  
+    <id>https://cpzzansu.github.io/posts/mapstruct/</id>
+    <content type="text/html" src="https://cpzzansu.github.io/posts/mapstruct/" />
+    <author>
+      <name>author_js</name>
+    </author>
+
+  
+    
+    <category term="JAVA" />
+    
+    <category term="Spring Boot" />
+    
+  
+
+  <summary>MapStruct를 이용한 DTO 매핑 자동화를 이용해서 우리 한 번 신나게 달려가봐요!</summary>
+
+  </entry>
 
   
   <entry>
@@ -119,32 +145,6 @@
   
 
   <summary>스프링 부트 security config 설정(1)</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>깃 블로그를 처음 만들었다.</title>
-    <link href="https://cpzzansu.github.io/posts/%EC%B2%98%EC%9D%8C%EC%9C%BC%EB%A1%9C%EC%93%B0%EB%8A%94%EA%B9%83%EB%B8%94%EB%A1%9C%EA%B7%B8/" rel="alternate" type="text/html" title="깃 블로그를 처음 만들었다." />
-    <published>2025-03-21T09:00:00+09:00</published>
-  
-    <updated>2025-03-23T23:28:31+09:00</updated>
-  
-    <id>https://cpzzansu.github.io/posts/%EC%B2%98%EC%9D%8C%EC%9C%BC%EB%A1%9C%EC%93%B0%EB%8A%94%EA%B9%83%EB%B8%94%EB%A1%9C%EA%B7%B8/</id>
-    <content type="text/html" src="https://cpzzansu.github.io/posts/%EC%B2%98%EC%9D%8C%EC%9C%BC%EB%A1%9C%EC%93%B0%EB%8A%94%EA%B9%83%EB%B8%94%EB%A1%9C%EA%B7%B8/" />
-    <author>
-      <name>author_js</name>
-    </author>
-
-  
-    
-    <category term="Development Skills" />
-    
-    <category term="Diary" />
-    
-  
-
-  <summary>쉬울 줄 알았는데... 생각보다 어렵네...</summary>
 
   </entry>
 
