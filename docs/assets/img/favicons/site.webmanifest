@@ -3,7 +3,7 @@
 {
   "name": "js tech blog",
   "short_name": "js tech blog",
-  "description": "A minimal, responsive and feature-rich Jekyll theme for technical writing.",
+  "description": "주니어 개발자의 도전과 성장, 그리고 실전 경험을 담은 테크 블로그입니다. 최신 기술 동향, 문제 해결 팁, 그리고 개발자로서의 꾸준한 학습 여정을 함께 공유합니다.",
   "icons": [
     {
       "src": "/assets/img/favicons/android-chrome-192x192.png",
