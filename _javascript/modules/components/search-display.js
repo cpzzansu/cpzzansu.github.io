@@ -94,6 +94,8 @@ export function displaySearch() {
   });
 
   input.addEventListener('input', () => {
+    console.log('hi')
+
     if (input.value === '') {
       if (isMobileView()) {
         hints.classList.remove(UNLOADED);
