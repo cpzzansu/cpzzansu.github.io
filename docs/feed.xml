@@ -4,7 +4,7 @@
   <id>https://cpzzansu.github.io/</id>
   <title>js tech blog</title>
   <subtitle>주니어 개발자의 도전과 성장, 그리고 실전 경험을 담은 테크 블로그입니다. 최신 기술 동향, 문제 해결 팁, 그리고 개발자로서의 꾸준한 학습 여정을 함께 공유합니다.</subtitle>
-  <updated>2025-03-26T12:05:27+09:00</updated>
+  <updated>2025-04-01T17:03:25+09:00</updated>
   <author>
     <name>김준수</name>
     <uri>https://cpzzansu.github.io/</uri>
@@ -17,6 +17,32 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Java에서 URL 생성</title>
+    <link href="https://cpzzansu.github.io/posts/url-uri-java-boot/" rel="alternate" type="text/html" title="Java에서 URL 생성" />
+    <published>2025-04-01T12:49:00+09:00</published>
+  
+    <updated>2025-04-01T12:49:00+09:00</updated>
+  
+    <id>https://cpzzansu.github.io/posts/url-uri-java-boot/</id>
+    <content type="text/html" src="https://cpzzansu.github.io/posts/url-uri-java-boot/" />
+    <author>
+      <name>author_js</name>
+    </author>
+
+  
+    
+    <category term="JAVA" />
+    
+    <category term="Spring Boot" />
+    
+  
+
+  <summary>URL(String) 생성자의 Deprecation과 URI의 활용</summary>
+
+  </entry>
 
   
   <entry>
@@ -119,32 +145,6 @@
   
 
   <summary>JWT 토큰의 검증이 필요할 때, 토큰을 서버로 보내서 검증할 것인가? 아니면 클라이언트에서 검증해서 바로 로그인페이지로 보낼 것인가? 그것이 문제로다</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title><독서노트>실리콘밸리의 팀장들(1)</title>
-    <link href="https://cpzzansu.github.io/posts/team-leaders-of-sillicon-valley-1/" rel="alternate" type="text/html" title="&amp;lt;독서노트&amp;gt;실리콘밸리의 팀장들(1)" />
-    <published>2025-03-23T02:00:00+09:00</published>
-  
-    <updated>2025-03-23T23:28:31+09:00</updated>
-  
-    <id>https://cpzzansu.github.io/posts/team-leaders-of-sillicon-valley-1/</id>
-    <content type="text/html" src="https://cpzzansu.github.io/posts/team-leaders-of-sillicon-valley-1/" />
-    <author>
-      <name>author_js</name>
-    </author>
-
-  
-    
-    <category term="독서노트" />
-    
-    <category term="실리콘밸리의 팀장들" />
-    
-  
-
-  <summary>실리콘밸리의 팀장들 0-76페이지까지 읽고 쓰는 독서 노트</summary>
 
   </entry>
 

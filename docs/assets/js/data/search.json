@@ -1,5 +1,13 @@
 [
   {
+    "title": "Java에서 URL 생성",
+    "url": "/posts/url-uri-java-boot/",
+    "categories": "JAVA, Spring Boot",
+    "tags": "java, spring, boot, 자바, 스프링부트, 스프링, url, uri",
+    "date": "2025-04-01 12:49:00 +0900",
+    "content": "URL(String) 생성자의 Deprecation과 URI의 활용"
+  },
+  {
     "title": "JwtAuthenticationFilter를 이용한 Spring Security JWT 인증 필터 설정 방법",
     "url": "/posts/spring-boot-security-custom-filter/",
     "categories": "JAVA, Spring Boot",
