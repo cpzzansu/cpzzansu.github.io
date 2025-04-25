@@ -1,5 +1,13 @@
 [
   {
+    "title": "끊김 없는 파일 업로드를 위한 React 최상단 Modal 배치하기",
+    "url": "/posts/create-file-upload-modal/",
+    "categories": "React, Cloud Storage",
+    "tags": "html, react, javascript, css, file, upload, modal, redux",
+    "date": "2025-04-25 12:01:00 +0900",
+    "content": "React + Redux 기반의 최상단 모달 구조를 통해, 화면 어디로 이동해도 끊김 없이 업로드 상황을 관리하는 방법을 소개합니다."
+  },
+  {
     "title": "Java에서 URL 생성",
     "url": "/posts/url-uri-java-boot/",
     "categories": "JAVA, Spring Boot",

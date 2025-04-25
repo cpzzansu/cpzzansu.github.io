@@ -3,7 +3,7 @@ title: 끊김 없는 파일 업로드를 위한 React 최상단 Modal 배치하�
 description: >-
   React + Redux 기반의 최상단 모달 구조를 통해, 화면 어디로 이동해도 끊김 없이 업로드 상황을 관리하는 방법을 소개합니다.
 author: author_js
-date: 2025-04-25 19:01:00 +0900
+date: 2025-04-25 12:01:00 +0900
 categories: [React, Cloud Storage]
 tags: [html, react, javascript, css, file, upload, modal, redux]
 pin: true

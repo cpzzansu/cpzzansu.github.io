@@ -4,7 +4,7 @@
   <id>https://cpzzansu.github.io/</id>
   <title>js tech blog</title>
   <subtitle>주니어 개발자의 도전과 성장, 그리고 실전 경험을 담은 테크 블로그입니다. 최신 기술 동향, 문제 해결 팁, 그리고 개발자로서의 꾸준한 학습 여정을 함께 공유합니다.</subtitle>
-  <updated>2025-04-25T16:27:10+09:00</updated>
+  <updated>2025-04-25T16:32:17+09:00</updated>
   <author>
     <name>김준수</name>
     <uri>https://cpzzansu.github.io/</uri>
@@ -17,6 +17,32 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>끊김 없는 파일 업로드를 위한 React 최상단 Modal 배치하기</title>
+    <link href="https://cpzzansu.github.io/posts/create-file-upload-modal/" rel="alternate" type="text/html" title="끊김 없는 파일 업로드를 위한 React 최상단 Modal 배치하기" />
+    <published>2025-04-25T12:01:00+09:00</published>
+  
+    <updated>2025-04-25T12:01:00+09:00</updated>
+  
+    <id>https://cpzzansu.github.io/posts/create-file-upload-modal/</id>
+    <content type="text/html" src="https://cpzzansu.github.io/posts/create-file-upload-modal/" />
+    <author>
+      <name>author_js</name>
+    </author>
+
+  
+    
+    <category term="React" />
+    
+    <category term="Cloud Storage" />
+    
+  
+
+  <summary>React + Redux 기반의 최상단 모달 구조를 통해, 화면 어디로 이동해도 끊김 없이 업로드 상황을 관리하는 방법을 소개합니다.</summary>
+
+  </entry>
 
   
   <entry>
@@ -119,32 +145,6 @@
   
 
   <summary>데이터 설계 변경의 무서움</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>React Native Expo에서 JWT 토큰 검증하기</title>
-    <link href="https://cpzzansu.github.io/posts/jwt-token-decode/" rel="alternate" type="text/html" title="React Native Expo에서 JWT 토큰 검증하기" />
-    <published>2025-03-23T22:00:00+09:00</published>
-  
-    <updated>2025-03-23T23:28:31+09:00</updated>
-  
-    <id>https://cpzzansu.github.io/posts/jwt-token-decode/</id>
-    <content type="text/html" src="https://cpzzansu.github.io/posts/jwt-token-decode/" />
-    <author>
-      <name>author_js</name>
-    </author>
-
-  
-    
-    <category term="React Native Expo" />
-    
-    <category term="귤톡" />
-    
-  
-
-  <summary>JWT 토큰의 검증이 필요할 때, 토큰을 서버로 보내서 검증할 것인가? 아니면 클라이언트에서 검증해서 바로 로그인페이지로 보낼 것인가? 그것이 문제로다</summary>
 
   </entry>
 
