@@ -4,7 +4,7 @@
   <id>https://cpzzansu.github.io/</id>
   <title>js tech blog</title>
   <subtitle>주니어 개발자의 도전과 성장, 그리고 실전 경험을 담은 테크 블로그입니다. 최신 기술 동향, 문제 해결 팁, 그리고 개발자로서의 꾸준한 학습 여정을 함께 공유합니다.</subtitle>
-  <updated>2025-04-26T22:24:04+09:00</updated>
+  <updated>2025-04-26T22:31:02+09:00</updated>
   <author>
     <name>김준수</name>
     <uri>https://cpzzansu.github.io/</uri>
@@ -24,7 +24,7 @@
     <link href="https://cpzzansu.github.io/posts/java-spring-boot-file-save/" rel="alternate" type="text/html" title="자바(Spring Boot)를 활용한 클라우드 스토리지 파일 저장 구현하기" />
     <published>2025-04-25T12:01:00+09:00</published>
   
-    <updated>2025-04-25T12:01:00+09:00</updated>
+    <updated>2025-04-26T22:24:21+09:00</updated>
   
     <id>https://cpzzansu.github.io/posts/java-spring-boot-file-save/</id>
     <content type="text/html" src="https://cpzzansu.github.io/posts/java-spring-boot-file-save/" />
