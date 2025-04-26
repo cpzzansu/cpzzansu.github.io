@@ -769,7 +769,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1157 단어"
+  title="1155 단어"
 >
   <em>6 분</em>읽는 시간</span>
 
@@ -1060,7 +1060,6 @@
 62
 63
 64
-65
 </pre></td><td class="rouge-code"><pre><span class="c1">// components/upload/FileUploadModal.jsx</span>
 <span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useRef</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
 <span class="k">import</span> <span class="p">{</span> <span class="nx">useDispatch</span><span class="p">,</span> <span class="nx">useSelector</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react-redux</span><span class="dl">'</span><span class="p">;</span>
@@ -1109,7 +1108,6 @@
           <span class="na">type</span><span class="p">=</span><span class="s">"file"</span>
           <span class="na">multiple</span>
           <span class="na">onChange</span><span class="p">=</span><span class="si">{</span><span class="nx">handleFileChange</span><span class="si">}</span>
-          <span class="na">style</span><span class="p">=</span>
         <span class="p">/&gt;</span>
         <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onClick</span><span class="p">=</span><span class="si">{</span><span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">fileInputRef</span><span class="p">.</span><span class="nx">current</span><span class="p">.</span><span class="nf">click</span><span class="p">()</span><span class="si">}</span><span class="p">&gt;</span>파일 선택<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
         <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onClick</span><span class="p">=</span><span class="si">{</span><span class="p">()</span> <span class="o">=&gt;</span> <span class="nf">dispatch</span><span class="p">(</span><span class="nf">setFileUploadOpen</span><span class="p">(</span><span class="kc">false</span><span class="p">))</span><span class="si">}</span><span class="p">&gt;</span>닫기<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>

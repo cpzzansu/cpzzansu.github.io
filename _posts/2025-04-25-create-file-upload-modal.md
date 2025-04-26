@@ -175,7 +175,6 @@ export default function FileUploadModal() {
           type="file"
           multiple
           onChange={handleFileChange}
-          style={{ display: 'none' }}
         />
         <button onClick={() => fileInputRef.current.click()}>파일 선택</button>
         <button onClick={() => dispatch(setFileUploadOpen(false))}>닫기</button>
