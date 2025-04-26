@@ -1,33 +1,33 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>https://cpzzansu.github.io/</id>
+  <id>https://cpzzansu.github.io/https://cpzzansu.github.io/</id>
   <title>js tech blog</title>
   <subtitle>주니어 개발자의 도전과 성장, 그리고 실전 경험을 담은 테크 블로그입니다. 최신 기술 동향, 문제 해결 팁, 그리고 개발자로서의 꾸준한 학습 여정을 함께 공유합니다.</subtitle>
-  <updated>2025-04-27T01:25:36+09:00</updated>
+  <updated>2025-04-27T01:32:46+09:00</updated>
   <author>
     <name>김준수</name>
-    <uri>https://cpzzansu.github.io/</uri>
+    <uri>https://cpzzansu.github.io/https://cpzzansu.github.io/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="https://cpzzansu.github.io/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="https://cpzzansu.github.io/https://cpzzansu.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="ko-KR"
-    href="https://cpzzansu.github.io/"/>
+    href="https://cpzzansu.github.io/https://cpzzansu.github.io/"/>
   <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
   <rights> © 2025 김준수 </rights>
-  <icon>/assets/img/favicons/favicon.ico</icon>
-  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+  <icon>https://cpzzansu.github.io//assets/img/favicons/favicon.ico</icon>
+  <logo>https://cpzzansu.github.io//assets/img/favicons/favicon-96x96.png</logo>
 
 
   
   <entry>
     <title>자바(Spring Boot)를 활용한 클라우드 스토리지 파일 저장 구현하기</title>
-    <link href="https://cpzzansu.github.io/posts/java-spring-boot-file-save/" rel="alternate" type="text/html" title="자바(Spring Boot)를 활용한 클라우드 스토리지 파일 저장 구현하기" />
+    <link href="https://cpzzansu.github.io/https://cpzzansu.github.io/posts/java-spring-boot-file-save/" rel="alternate" type="text/html" title="자바(Spring Boot)를 활용한 클라우드 스토리지 파일 저장 구현하기" />
     <published>2025-04-25T12:01:00+09:00</published>
   
     <updated>2025-04-26T22:24:21+09:00</updated>
   
-    <id>https://cpzzansu.github.io/posts/java-spring-boot-file-save/</id>
-    <content type="text/html" src="https://cpzzansu.github.io/posts/java-spring-boot-file-save/" />
+    <id>https://cpzzansu.github.io/https://cpzzansu.github.io/posts/java-spring-boot-file-save/</id>
+    <content type="text/html" src="https://cpzzansu.github.io/https://cpzzansu.github.io/posts/java-spring-boot-file-save/" />
     <author>
       <name>author_js</name>
     </author>
@@ -47,13 +47,13 @@
   
   <entry>
     <title>끊김 없는 파일 업로드를 위한 React 최상단 Modal 배치하기</title>
-    <link href="https://cpzzansu.github.io/posts/create-file-upload-modal/" rel="alternate" type="text/html" title="끊김 없는 파일 업로드를 위한 React 최상단 Modal 배치하기" />
+    <link href="https://cpzzansu.github.io/https://cpzzansu.github.io/posts/create-file-upload-modal/" rel="alternate" type="text/html" title="끊김 없는 파일 업로드를 위한 React 최상단 Modal 배치하기" />
     <published>2025-04-25T12:01:00+09:00</published>
   
     <updated>2025-04-27T01:20:06+09:00</updated>
   
-    <id>https://cpzzansu.github.io/posts/create-file-upload-modal/</id>
-    <content type="text/html" src="https://cpzzansu.github.io/posts/create-file-upload-modal/" />
+    <id>https://cpzzansu.github.io/https://cpzzansu.github.io/posts/create-file-upload-modal/</id>
+    <content type="text/html" src="https://cpzzansu.github.io/https://cpzzansu.github.io/posts/create-file-upload-modal/" />
     <author>
       <name>author_js</name>
     </author>
@@ -73,13 +73,13 @@
   
   <entry>
     <title>Java에서 URL 생성</title>
-    <link href="https://cpzzansu.github.io/posts/url-uri-java-boot/" rel="alternate" type="text/html" title="Java에서 URL 생성" />
+    <link href="https://cpzzansu.github.io/https://cpzzansu.github.io/posts/url-uri-java-boot/" rel="alternate" type="text/html" title="Java에서 URL 생성" />
     <published>2025-04-01T12:49:00+09:00</published>
   
     <updated>2025-04-01T12:49:00+09:00</updated>
   
-    <id>https://cpzzansu.github.io/posts/url-uri-java-boot/</id>
-    <content type="text/html" src="https://cpzzansu.github.io/posts/url-uri-java-boot/" />
+    <id>https://cpzzansu.github.io/https://cpzzansu.github.io/posts/url-uri-java-boot/</id>
+    <content type="text/html" src="https://cpzzansu.github.io/https://cpzzansu.github.io/posts/url-uri-java-boot/" />
     <author>
       <name>author_js</name>
     </author>
@@ -99,13 +99,13 @@
   
   <entry>
     <title>JwtAuthenticationFilter를 이용한 Spring Security JWT 인증 필터 설정 방법</title>
-    <link href="https://cpzzansu.github.io/posts/spring-boot-security-custom-filter/" rel="alternate" type="text/html" title="JwtAuthenticationFilter를 이용한 Spring Security JWT 인증 필터 설정 방법" />
+    <link href="https://cpzzansu.github.io/https://cpzzansu.github.io/posts/spring-boot-security-custom-filter/" rel="alternate" type="text/html" title="JwtAuthenticationFilter를 이용한 Spring Security JWT 인증 필터 설정 방법" />
     <published>2025-03-25T01:49:00+09:00</published>
   
     <updated>2025-03-25T01:49:00+09:00</updated>
   
-    <id>https://cpzzansu.github.io/posts/spring-boot-security-custom-filter/</id>
-    <content type="text/html" src="https://cpzzansu.github.io/posts/spring-boot-security-custom-filter/" />
+    <id>https://cpzzansu.github.io/https://cpzzansu.github.io/posts/spring-boot-security-custom-filter/</id>
+    <content type="text/html" src="https://cpzzansu.github.io/https://cpzzansu.github.io/posts/spring-boot-security-custom-filter/" />
     <author>
       <name>author_js</name>
     </author>
@@ -125,13 +125,13 @@
   
   <entry>
     <title>MapStruct를 이용한 DTO 매핑 자동화(feat.관심사의 분리)</title>
-    <link href="https://cpzzansu.github.io/posts/mapstruct/" rel="alternate" type="text/html" title="MapStruct를 이용한 DTO 매핑 자동화(feat.관심사의 분리)" />
+    <link href="https://cpzzansu.github.io/https://cpzzansu.github.io/posts/mapstruct/" rel="alternate" type="text/html" title="MapStruct를 이용한 DTO 매핑 자동화(feat.관심사의 분리)" />
     <published>2025-03-24T17:55:00+09:00</published>
   
     <updated>2025-03-24T17:55:00+09:00</updated>
   
-    <id>https://cpzzansu.github.io/posts/mapstruct/</id>
-    <content type="text/html" src="https://cpzzansu.github.io/posts/mapstruct/" />
+    <id>https://cpzzansu.github.io/https://cpzzansu.github.io/posts/mapstruct/</id>
+    <content type="text/html" src="https://cpzzansu.github.io/https://cpzzansu.github.io/posts/mapstruct/" />
     <author>
       <name>author_js</name>
     </author>

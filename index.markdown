@@ -1,6 +1,7 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
+title: Index page   # 선택 사항
+paginate: 5         # 페이지당 보여줄 포스트 개수
+pagination:
+  enabled: true
 ---
