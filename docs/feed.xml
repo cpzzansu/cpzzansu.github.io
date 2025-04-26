@@ -4,7 +4,7 @@
   <id>https://cpzzansu.github.io/</id>
   <title>js tech blog</title>
   <subtitle>주니어 개발자의 도전과 성장, 그리고 실전 경험을 담은 테크 블로그입니다. 최신 기술 동향, 문제 해결 팁, 그리고 개발자로서의 꾸준한 학습 여정을 함께 공유합니다.</subtitle>
-  <updated>2025-04-27T01:19:55+09:00</updated>
+  <updated>2025-04-27T01:25:36+09:00</updated>
   <author>
     <name>김준수</name>
     <uri>https://cpzzansu.github.io/</uri>
@@ -50,7 +50,7 @@
     <link href="https://cpzzansu.github.io/posts/create-file-upload-modal/" rel="alternate" type="text/html" title="끊김 없는 파일 업로드를 위한 React 최상단 Modal 배치하기" />
     <published>2025-04-25T12:01:00+09:00</published>
   
-    <updated>2025-04-25T16:32:40+09:00</updated>
+    <updated>2025-04-27T01:20:06+09:00</updated>
   
     <id>https://cpzzansu.github.io/posts/create-file-upload-modal/</id>
     <content type="text/html" src="https://cpzzansu.github.io/posts/create-file-upload-modal/" />
