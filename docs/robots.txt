@@ -2,5 +2,5 @@ User-agent: *
 
 Disallow: /norobots/
 
-Sitemap: https://cpzzansu.github.io/https://cpzzansu.github.io/sitemap.xml
+Sitemap: https://cpzzansu.github.io/sitemap.xml
 #DaumWebMasterTool:0076ab791ac0efd71f59c33418032897d85ecc1700af4ba5d4b9f68130f6cd62:4o+KtSKmM27BuY5wu6Jt0A==

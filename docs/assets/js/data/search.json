@@ -1,7 +1,7 @@
 [
   {
     "title": "자바(Spring Boot)를 활용한 클라우드 스토리지 파일 저장 구현하기",
-    "url": "/https://cpzzansu.github.io/posts/java-spring-boot-file-save/",
+    "url": "/posts/java-spring-boot-file-save/",
     "categories": "React, Cloud Storage",
     "tags": "html, react, javascript, css, file, upload, modal, redux",
     "date": "2025-04-25 12:01:00 +0900",
@@ -9,7 +9,7 @@
   },
   {
     "title": "끊김 없는 파일 업로드를 위한 React 최상단 Modal 배치하기",
-    "url": "/https://cpzzansu.github.io/posts/create-file-upload-modal/",
+    "url": "/posts/create-file-upload-modal/",
     "categories": "React, Cloud Storage",
     "tags": "html, react, javascript, css, file, upload, modal, redux",
     "date": "2025-04-25 12:01:00 +0900",
@@ -17,7 +17,7 @@
   },
   {
     "title": "Java에서 URL 생성",
-    "url": "/https://cpzzansu.github.io/posts/url-uri-java-boot/",
+    "url": "/posts/url-uri-java-boot/",
     "categories": "JAVA, Spring Boot",
     "tags": "java, spring, boot, 자바, 스프링부트, 스프링, url, uri",
     "date": "2025-04-01 12:49:00 +0900",
@@ -25,7 +25,7 @@
   },
   {
     "title": "JwtAuthenticationFilter를 이용한 Spring Security JWT 인증 필터 설정 방법",
-    "url": "/https://cpzzansu.github.io/posts/spring-boot-security-custom-filter/",
+    "url": "/posts/spring-boot-security-custom-filter/",
     "categories": "JAVA, Spring Boot",
     "tags": "java, spring, boot, 자바, 스프링부트, 스프링, security, JWT, filter",
     "date": "2025-03-25 01:49:00 +0900",
@@ -33,7 +33,7 @@
   },
   {
     "title": "MapStruct를 이용한 DTO 매핑 자동화(feat.관심사의 분리)",
-    "url": "/https://cpzzansu.github.io/posts/mapstruct/",
+    "url": "/posts/mapstruct/",
     "categories": "JAVA, Spring Boot",
     "tags": "java, spring, boot, 자바, 스프링부트, 스프링, JPA, entity, mapStruct, dto",
     "date": "2025-03-24 17:55:00 +0900",
@@ -41,7 +41,7 @@
   },
   {
     "title": "귤톡 개발일지 - 채팅방 데이터 설계 변경 이야기",
-    "url": "/https://cpzzansu.github.io/posts/develop-diary-gyooltalk/",
+    "url": "/posts/develop-diary-gyooltalk/",
     "categories": "React Native Expo, 귤톡",
     "tags": "react, native, expo, 귤톡, 데이터베이스, database, mongodb, 채팅, 앱, 모바일, 설계",
     "date": "2025-03-24 00:30:00 +0900",
@@ -49,7 +49,7 @@
   },
   {
     "title": "React Native Expo에서 JWT 토큰 검증하기",
-    "url": "/https://cpzzansu.github.io/posts/jwt-token-decode/",
+    "url": "/posts/jwt-token-decode/",
     "categories": "React Native Expo, 귤톡",
     "tags": "react, native, expo, jwt, token, 검증",
     "date": "2025-03-23 22:00:00 +0900",
@@ -57,7 +57,7 @@
   },
   {
     "title": "<독서노트>실리콘밸리의 팀장들(1)",
-    "url": "/https://cpzzansu.github.io/posts/team-leaders-of-sillicon-valley-1/",
+    "url": "/posts/team-leaders-of-sillicon-valley-1/",
     "categories": "독서노트, 실리콘밸리의 팀장들",
     "tags": "실리콘밸리의 팀장들, 킴 스콧, kim scott, 독서노트, 기록, 생각",
     "date": "2025-03-23 02:00:00 +0900",
@@ -65,7 +65,7 @@
   },
   {
     "title": "securityFilterChain 설정",
-    "url": "/https://cpzzansu.github.io/posts/spring-boot-security/",
+    "url": "/posts/spring-boot-security/",
     "categories": "JAVA, Spring Boot",
     "tags": "스프링, 스프링부트, 보안, 필터, spring, springboot, filter, chain, setting, config",
     "date": "2025-03-22 23:00:00 +0900",
@@ -73,7 +73,7 @@
   },
   {
     "title": "깃 블로그를 처음 만들었다.",
-    "url": "/https://cpzzansu.github.io/posts/%EC%B2%98%EC%9D%8C%EC%9C%BC%EB%A1%9C%EC%93%B0%EB%8A%94%EA%B9%83%EB%B8%94%EB%A1%9C%EA%B7%B8/",
+    "url": "/posts/%EC%B2%98%EC%9D%8C%EC%9C%BC%EB%A1%9C%EC%93%B0%EB%8A%94%EA%B9%83%EB%B8%94%EB%A1%9C%EA%B7%B8/",
     "categories": "Development Skills, Diary",
     "tags": "시작, 깃, 블로그, start, git, blog",
     "date": "2025-03-21 09:00:00 +0900",
