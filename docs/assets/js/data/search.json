@@ -1,5 +1,13 @@
 [
   {
+    "title": "자바(Spring Boot)를 활용한 클라우드 스토리지 파일 저장 구현하기",
+    "url": "/posts/java-spring-boot-file-save/",
+    "categories": "React, Cloud Storage",
+    "tags": "html, react, javascript, css, file, upload, modal, redux",
+    "date": "2025-04-25 12:01:00 +0900",
+    "content": "클라우드 스토리지 서비스를 개발하면서 핵심적인 기능 중 하나는 바로 파일 업로드입니다. 이번 글에서는 자바(Spring Boot) 환경에서 파일 업로드 API와 이를 서버에 저장하는 방식을 실무 예제를 통해 자세히 설명하겠습니다."
+  },
+  {
     "title": "끊김 없는 파일 업로드를 위한 React 최상단 Modal 배치하기",
     "url": "/posts/create-file-upload-modal/",
     "categories": "React, Cloud Storage",

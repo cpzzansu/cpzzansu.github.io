@@ -4,7 +4,7 @@
   <id>https://cpzzansu.github.io/</id>
   <title>js tech blog</title>
   <subtitle>주니어 개발자의 도전과 성장, 그리고 실전 경험을 담은 테크 블로그입니다. 최신 기술 동향, 문제 해결 팁, 그리고 개발자로서의 꾸준한 학습 여정을 함께 공유합니다.</subtitle>
-  <updated>2025-04-25T16:32:17+09:00</updated>
+  <updated>2025-04-26T22:10:58+09:00</updated>
   <author>
     <name>김준수</name>
     <uri>https://cpzzansu.github.io/</uri>
@@ -20,11 +20,37 @@
 
   
   <entry>
+    <title>자바(Spring Boot)를 활용한 클라우드 스토리지 파일 저장 구현하기</title>
+    <link href="https://cpzzansu.github.io/posts/java-spring-boot-file-save/" rel="alternate" type="text/html" title="자바(Spring Boot)를 활용한 클라우드 스토리지 파일 저장 구현하기" />
+    <published>2025-04-25T12:01:00+09:00</published>
+  
+    <updated>2025-04-25T12:01:00+09:00</updated>
+  
+    <id>https://cpzzansu.github.io/posts/java-spring-boot-file-save/</id>
+    <content type="text/html" src="https://cpzzansu.github.io/posts/java-spring-boot-file-save/" />
+    <author>
+      <name>author_js</name>
+    </author>
+
+  
+    
+    <category term="React" />
+    
+    <category term="Cloud Storage" />
+    
+  
+
+  <summary>클라우드 스토리지 서비스를 개발하면서 핵심적인 기능 중 하나는 바로 파일 업로드입니다. 이번 글에서는 자바(Spring Boot) 환경에서 파일 업로드 API와 이를 서버에 저장하는 방식을 실무 예제를 통해 자세히 설명하겠습니다.</summary>
+
+  </entry>
+
+  
+  <entry>
     <title>끊김 없는 파일 업로드를 위한 React 최상단 Modal 배치하기</title>
     <link href="https://cpzzansu.github.io/posts/create-file-upload-modal/" rel="alternate" type="text/html" title="끊김 없는 파일 업로드를 위한 React 최상단 Modal 배치하기" />
     <published>2025-04-25T12:01:00+09:00</published>
   
-    <updated>2025-04-25T12:01:00+09:00</updated>
+    <updated>2025-04-25T16:32:40+09:00</updated>
   
     <id>https://cpzzansu.github.io/posts/create-file-upload-modal/</id>
     <content type="text/html" src="https://cpzzansu.github.io/posts/create-file-upload-modal/" />
@@ -119,32 +145,6 @@
   
 
   <summary>MapStruct를 이용한 DTO 매핑 자동화를 이용해서 우리 한 번 신나게 달려가봐요!</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>귤톡 개발일지 - 채팅방 데이터 설계 변경 이야기</title>
-    <link href="https://cpzzansu.github.io/posts/develop-diary-gyooltalk/" rel="alternate" type="text/html" title="귤톡 개발일지 - 채팅방 데이터 설계 변경 이야기" />
-    <published>2025-03-24T00:30:00+09:00</published>
-  
-    <updated>2025-03-24T00:30:00+09:00</updated>
-  
-    <id>https://cpzzansu.github.io/posts/develop-diary-gyooltalk/</id>
-    <content type="text/html" src="https://cpzzansu.github.io/posts/develop-diary-gyooltalk/" />
-    <author>
-      <name>author_js</name>
-    </author>
-
-  
-    
-    <category term="React Native Expo" />
-    
-    <category term="귤톡" />
-    
-  
-
-  <summary>데이터 설계 변경의 무서움</summary>
 
   </entry>
 

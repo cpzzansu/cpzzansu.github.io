@@ -340,11 +340,6 @@ Consider an example using all of the above:
 
 You can pin one or more posts to the top of the home page, and the fixed posts are sorted in reverse order according to their release date. Enable by:
 
-```yaml
----
-pin: false
----
-```
 
 ## Prompts
 
