@@ -208,7 +208,7 @@ compress_html:
 exclude:
   - "*.gem"
   - "*.gemspec"
-  - docs
+  - "docs"
   - tools
   - README.md
   - LICENSE
@@ -219,8 +219,6 @@ exclude:
   - "assets/404.html"    # 또는 assets 쪽 제외
   - "about.markdown"
   - "_tabs/about.md"
-  - "index.html"
-  - "index.markdown"
 
 jekyll-archives:
   enabled: [categories, tags]
