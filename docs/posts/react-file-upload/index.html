@@ -41,27 +41,27 @@
 
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="React Native Expo에서 JWT 토큰 검증하기" />
+<meta property="og:title" content="React 클라우드 스토리지 대용량 파일 업로드 취소 기능 구현" />
 <meta name="author" content="김준수" />
 <meta property="og:locale" content="ko_KR" />
-<meta name="description" content="JWT 토큰의 검증이 필요할 때, 토큰을 서버로 보내서 검증할 것인가? 아니면 클라이언트에서 검증해서 바로 로그인페이지로 보낼 것인가? 그것이 문제로다" />
-<meta property="og:description" content="JWT 토큰의 검증이 필요할 때, 토큰을 서버로 보내서 검증할 것인가? 아니면 클라이언트에서 검증해서 바로 로그인페이지로 보낼 것인가? 그것이 문제로다" />
-<link rel="canonical" href="https://cpzzansu.github.io/posts/jwt-token-decode/" />
-<meta property="og:url" content="https://cpzzansu.github.io/posts/jwt-token-decode/" />
+<meta name="description" content="대용량 파일을 업로드 할 때, “취소” 할 수 있도록 구현하기" />
+<meta property="og:description" content="대용량 파일을 업로드 할 때, “취소” 할 수 있도록 구현하기" />
+<link rel="canonical" href="https://cpzzansu.github.io/posts/react-file-upload/" />
+<meta property="og:url" content="https://cpzzansu.github.io/posts/react-file-upload/" />
 <meta property="og:site_name" content="js tech blog" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-03-23T22:00:00+09:00" />
+<meta property="article:published_time" content="2025-04-28T12:01:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="React Native Expo에서 JWT 토큰 검증하기" />
+<meta property="twitter:title" content="React 클라우드 스토리지 대용량 파일 업로드 취소 기능 구현" />
 <meta name="twitter:site" content="@twitter_username" />
 <meta name="twitter:creator" content="@_" />
 <meta name="google-site-verification" content="12CWQqSn3PkTky9mGJrrvspD5EhdhesCfOpYXesbNag" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"김준수","url":"https://github.com/cpzzansu"},"dateModified":"2025-03-23T23:28:31+09:00","datePublished":"2025-03-23T22:00:00+09:00","description":"JWT 토큰의 검증이 필요할 때, 토큰을 서버로 보내서 검증할 것인가? 아니면 클라이언트에서 검증해서 바로 로그인페이지로 보낼 것인가? 그것이 문제로다","headline":"React Native Expo에서 JWT 토큰 검증하기","mainEntityOfPage":{"@type":"WebPage","@id":"https://cpzzansu.github.io/posts/jwt-token-decode/"},"url":"https://cpzzansu.github.io/posts/jwt-token-decode/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"김준수","url":"https://github.com/cpzzansu"},"dateModified":"2025-04-28T12:01:00+09:00","datePublished":"2025-04-28T12:01:00+09:00","description":"대용량 파일을 업로드 할 때, “취소” 할 수 있도록 구현하기","headline":"React 클라우드 스토리지 대용량 파일 업로드 취소 기능 구현","mainEntityOfPage":{"@type":"WebPage","@id":"https://cpzzansu.github.io/posts/react-file-upload/"},"url":"https://cpzzansu.github.io/posts/react-file-upload/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-    <title>React Native Expo에서 JWT 토큰 검증하기 | js tech blog
+    <title>React 클라우드 스토리지 대용량 파일 업로드 취소 기능 구현 | js tech blog
     </title>
 
     <!--
@@ -448,7 +448,7 @@
         
           
             
-              <span>React Native Expo에서 JWT 토큰 검증하기</span>
+              <span>React 클라우드 스토리지 대용량 파일 업로드 취소 기능 구현</span>
             
 
           
@@ -549,6 +549,61 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -557,74 +612,10 @@
   
 
   
-    
-    
-
-    
-      
-        
-        
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-
-    
-  
 
   
   
 
-  
-    
-    
-
-    
-      
-        
-        
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-
-    
   
 
   
@@ -648,9 +639,9 @@
 
 <article class="px-1" data-toc="true">
   <header>
-    <h1 data-toc-skip>React Native Expo에서 JWT 토큰 검증하기</h1>
+    <h1 data-toc-skip>React 클라우드 스토리지 대용량 파일 업로드 취소 기능 구현</h1>
     
-      <p class="post-desc fw-light mb-4">JWT 토큰의 검증이 필요할 때, 토큰을 서버로 보내서 검증할 것인가? 아니면 클라이언트에서 검증해서 바로 로그인페이지로 보낼 것인가? 그것이 문제로다</p>
+      <p class="post-desc fw-light mb-4">대용량 파일을 업로드 할 때, "취소" 할 수 있도록 구현하기</p>
     
 
     <div class="post-meta text-muted">
@@ -667,41 +658,18 @@
 
 <time
   
-  data-ts="1742734800"
+  data-ts="1745809260"
   data-df="YYYY/MM/DD"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  2025/03/23
+  2025/04/28
 </time>
 
       </span>
 
       <!-- lastmod date -->
-      
-        <span>
-          업데이트
-          <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1742740111"
-  data-df="YYYY/MM/DD"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  2025/03/23
-</time>
-
-        </span>
       
 
       
@@ -748,9 +716,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="892 단어"
+  title="1086 단어"
 >
-  <em>4 분</em>읽는 시간</span>
+  <em>6 분</em>읽는 시간</span>
 
         </div>
       </div>
@@ -759,7 +727,7 @@
 
   
     <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
-      <span class="label text-truncate">React Native Expo에서 JWT 토큰 검증하기</span>
+      <span class="label text-truncate">React 클라우드 스토리지 대용량 파일 업로드 취소 기능 구현</span>
       <button type="button" class="toc-trigger btn me-1">
         <i class="fa-solid fa-list-ul fa-fw"></i>
       </button>
@@ -772,7 +740,7 @@
 
     <dialog id="toc-popup" class="p-0">
       <div class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="label text-truncate py-2 ms-4">React Native Expo에서 JWT 토큰 검증하기</div>
+        <div class="label text-truncate py-2 ms-4">React 클라우드 스토리지 대용량 파일 업로드 취소 기능 구현</div>
         <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
           <i class="fas fa-close"></i>
         </button>
@@ -782,99 +750,345 @@
   
 
   <div class="content">
-    <h2 id="react-native에서-jwt-토큰의-클라이언트-검증-로직-추가하기"><span class="me-2">React Native에서 JWT 토큰의 클라이언트 검증 로직 추가하기</span><a href="#react-native에서-jwt-토큰의-클라이언트-검증-로직-추가하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <p>대용량 파일을 업로드할 때, 전송 도중 “취소”할 수 있도록 구현하기, Axios의 AbortController와 전역 취소 서비스를 결합해, 
+페이지 어떤 컴포넌트에서든 쉽게 “업로드 취소” 할 수 있도록 구현하는 기능을 살펴봅시다.</p>
 
-<p>현재 프로젝트에서는 Redux를 통해 인증 토큰을 관리하고 있으며, 토큰이 없는 경우에만 로그인 화면으로 이동하는 간단한 로직을 사용 중이었습니다.</p>
+<h2 id="1-업로드-api-수정하기"><span class="me-2">1. 업로드 API 수정하기</span><a href="#1-업로드-api-수정하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-</pre></td><td class="rouge-code"><pre>const { token } = useSelector((state: RootState) =&gt; state.auth);
+<p>기존에 단순히 onUploadProgress 콜백만을 써서 파일의 전송의 진행상황을 전송해주던 uploadFileApi를 AbortController를 이용해 
+“업로드 취소”함수를 함께 반환하도록 바꿉니다.</p>
 
-if (token === null) {  
-  return &lt;Login /&gt;;  
-}
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>그렇지만 위와 같이 토큰을 검증하면 생기는 문제들이 있습니다.:</p>
-
-<ul>
-  <li>
-    <p>이전에 로그인을 통해 발급받은 토큰이 아직 저장된 상태라면, 실제 로그인 여부나 토큰의 유효성에 상관없이 로그인 화면으로 이동하지 않고 메인 화면을 그대로 보여주게 됩니다.</p>
-  </li>
-  <li>
-    <p>이로 인해서 개발을 하고 있는 팀원들이 지금 로그인 상태인지 확인이 제대로 안돼서 기능 개발의 오류 발생이 다른 것으로 인해서 발생하는 줄 알고, 혼동이 오는 경우가 있었습니다.</p>
-  </li>
-</ul>
-
-<h3 id="개선된-클라이언트-측-토큰-검증-로직"><span class="me-2">개선된 클라이언트 측 토큰 검증 로직</span><a href="#개선된-클라이언트-측-토큰-검증-로직" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-
-<p>서버에서 토큰 만료 기간을 무제한으로 설정하거나 Refresh Token을 도입하는 등의 결정은 아직 팀원들과 논의중에 있기 때문에 그것들의 결정은 좀 미루더라도, 일단 클라이언트에서 최소한의 토큰 검증 로직을 추가하여 사용성을 높이고자 합니다.</p>
-
-<h4 id="1-토큰-타입을-명확히-체크"><span class="me-2">1. 토큰 타입을 명확히 체크</span><a href="#1-토큰-타입을-명확히-체크" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<p>기존의 <code class="language-plaintext highlighter-rouge">null</code> 체크에서 타입을 명확히 문자열로 한정하여 더욱 정확한 검증을 수행합니다.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="rouge-code"><pre>if (typeof token !== "string") {  
-  return &lt;Login /&gt;;  
-}
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>위 코드로 인해 <code class="language-plaintext highlighter-rouge">token</code>이 존재하지 않거나 잘못된 형태의 값일 경우 즉시 로그인 화면으로 이동시킬 수 있습니다.</p>
-
-<h4 id="2-jwt-디코딩을-통한-유효기간exp-검증"><span class="me-2">2. JWT 디코딩을 통한 유효기간(exp) 검증</span><a href="#2-jwt-디코딩을-통한-유효기간exp-검증" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<p>JWT 토큰의 payload에는 보통 <code class="language-plaintext highlighter-rouge">exp(expiration)</code> 필드가 포함되어 있어 토큰의 유효기간을 나타냅니다. 이를 클라이언트 측에서 간편하게 디코딩하여 확인하기 위해 <code class="language-plaintext highlighter-rouge">jwt-decode</code> 라이브러리를 사용합니다.</p>
-
-<p>먼저 라이브러리를 import 합니다.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>import { jwtDecode } from "jwt-decode";
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>다음은 실제 토큰 유효기간을 체크하는 로직입니다.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-javascript highlighter-rouge"><div class="code-header">
+        <span data-label-text="JavaScript"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
 5
 6
-</pre></td><td class="rouge-code"><pre>const decoded = jwtDecode(token);
-const currentTime = Date.now() / 1000; // 현재 시간을 초 단위로 변환
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+</pre></td><td class="rouge-code"><pre><span class="c1">// services/uploadService.js</span>
+<span class="k">import</span> <span class="nx">axios</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">axios</span><span class="dl">'</span><span class="p">;</span>
 
-if (decoded.exp &amp;&amp; decoded.exp &lt; currentTime) {  
-  return &lt;Login /&gt;;
-}
+<span class="k">export</span> <span class="kd">function</span> <span class="nf">uploadFileApi</span><span class="p">({</span> <span class="nx">formData</span><span class="p">,</span> <span class="nx">onProgress</span><span class="p">,</span> <span class="nx">folderId</span> <span class="p">})</span> <span class="p">{</span>
+  <span class="c1">// ① AbortController 생성</span>
+  <span class="kd">const</span> <span class="nx">controller</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">AbortController</span><span class="p">();</span>
+
+  <span class="c1">// ② Axios 요청에 signal 전달</span>
+  <span class="kd">const</span> <span class="nx">promise</span> <span class="o">=</span> <span class="nx">axios</span><span class="p">.</span><span class="nf">post</span><span class="p">(</span>
+    <span class="s2">`/api/drive/upload?folderId=</span><span class="p">${</span><span class="nx">folderId</span><span class="p">}</span><span class="s2">`</span><span class="p">,</span>
+    <span class="nx">formData</span><span class="p">,</span>
+    <span class="p">{</span>
+      <span class="na">headers</span><span class="p">:</span> <span class="p">{</span> <span class="dl">'</span><span class="s1">Content-Type</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">multipart/form-data</span><span class="dl">'</span> <span class="p">},</span>
+      <span class="na">signal</span><span class="p">:</span> <span class="nx">controller</span><span class="p">.</span><span class="nx">signal</span><span class="p">,</span>
+      <span class="na">onUploadProgress</span><span class="p">:</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="k">if </span><span class="p">(</span><span class="o">!</span><span class="nx">e</span><span class="p">.</span><span class="nx">total</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+        <span class="kd">const</span> <span class="nx">percent</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nf">round</span><span class="p">((</span><span class="nx">e</span><span class="p">.</span><span class="nx">loaded</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span> <span class="o">/</span> <span class="nx">e</span><span class="p">.</span><span class="nx">total</span><span class="p">);</span>
+        <span class="nf">onProgress</span><span class="p">(</span><span class="nx">percent</span><span class="p">);</span>
+      <span class="p">},</span>
+    <span class="p">}</span>
+  <span class="p">).</span><span class="nf">then</span><span class="p">(</span><span class="nx">res</span> <span class="o">=&gt;</span> <span class="nx">res</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+
+  <span class="c1">// ③ promise 와 cancel 함수를 반환</span>
+  <span class="k">return</span> <span class="p">{</span>
+    <span class="nx">promise</span><span class="p">,</span>
+    <span class="na">cancel</span><span class="p">:</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">controller</span><span class="p">.</span><span class="nf">abort</span><span class="p">(),</span>
+  <span class="p">};</span>
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>위 코드를 통해 다음과 같은 효과를 얻을 수 있습니다.:</p>
-
 <ul>
-  <li>
-    <p>현재 시점이 토큰의 유효기간을 초과했을 경우 바로 로그인 화면으로 이동합니다.</p>
-  </li>
-  <li>
-    <p>이를 통해 실제로 유효하지 않은 토큰으로 메인 화면에 접근하는 문제를 방지할 수 있습니다.</p>
-  </li>
+  <li>axios의 signal 옵션에 controller.signal 을 넘기게 되면, controller.abort() 호출 시 네트워크 요청이 즉시 중단됩니다.</li>
 </ul>
 
-<h3 id="결론"><span class="me-2">결론</span><a href="#결론" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h2 id="2-전역-취소-서비스-만들기"><span class="me-2">2. 전역 취소 서비스 만들기</span><a href="#2-전역-취소-서비스-만들기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>이번 변경 사항을 통해 클라이언트에서 JWT 토큰의 유효성에 대해 최소한의 안전장치를 마련하였습니다. 완벽한 인증 및 보안 로직은 서버 측에서 보장하는 것이 맞지만, 클라이언트에서도 간단한 토큰 유효성 체크를 추가하는 것이 사용자 경험과 개발 편의성을 크게 향상시킬 수 있습니다. 바로 우리 개발팀이 겪었습니다 ^^</p>
+<p>함수를 Redux 스토어에 넣으면 직렬화 오류가 발생합니다. 그래서 모듈 싱클톤으로 취소 함수만 관리합니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="code-header">
+        <span data-label-text="JavaScript"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td><td class="rouge-code"><pre><span class="c1">// services/uploadCancelService.js</span>
+<span class="kd">const</span> <span class="nx">cancelMap</span> <span class="o">=</span> <span class="p">{};</span>
+
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">registerCancel</span> <span class="o">=</span> <span class="p">(</span><span class="nx">id</span><span class="p">,</span> <span class="nx">cancelFn</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">cancelMap</span><span class="p">[</span><span class="nx">id</span><span class="p">]</span> <span class="o">=</span> <span class="nx">cancelFn</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">cancelUpload</span> <span class="o">=</span> <span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">if </span><span class="p">(</span><span class="nx">cancelMap</span><span class="p">[</span><span class="nx">id</span><span class="p">])</span> <span class="p">{</span>
+    <span class="nx">cancelMap</span><span class="p">[</span><span class="nx">id</span><span class="p">]();</span>      <span class="c1">// 업로드 중단</span>
+    <span class="k">delete</span> <span class="nx">cancelMap</span><span class="p">[</span><span class="nx">id</span><span class="p">];</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">cancelAllUploads</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nb">Object</span><span class="p">.</span><span class="nf">values</span><span class="p">(</span><span class="nx">cancelMap</span><span class="p">).</span><span class="nf">forEach</span><span class="p">(</span><span class="nx">fn</span> <span class="o">=&gt;</span> <span class="nf">fn</span><span class="p">());</span>
+  <span class="nb">Object</span><span class="p">.</span><span class="nf">keys</span><span class="p">(</span><span class="nx">cancelMap</span><span class="p">).</span><span class="nf">forEach</span><span class="p">(</span><span class="nx">k</span> <span class="o">=&gt;</span> <span class="k">delete</span> <span class="nx">cancelMap</span><span class="p">[</span><span class="nx">k</span><span class="p">]);</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<ul>
+  <li>registerCancel(id, fn) 으로 각 업로드의 취소 함수를 ID별로 저장</li>
+  <li>cancelUpload(id) 혹은 cancelAllUploads() 로 언제든 취소할 수 있습니다.</li>
+</ul>
+
+<h2 id="3-업로드-매니저-컴포넌트"><span class="me-2">3. 업로드 매니저 컴포넌트</span><a href="#3-업로드-매니저-컴포넌트" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>파일 선택부터 API 호출, 취소 함수 등록까지 처리하는 UploadManager 컴포넌트의 예시입니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="code-header">
+        <span data-label-text="JavaScript"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+</pre></td><td class="rouge-code"><pre><span class="c1">// components/UploadManager.jsx</span>
+<span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useRef</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">uploadFileApi</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../services/uploadService</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">registerCancel</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../services/uploadCancelService</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nf">UploadManager</span><span class="p">({</span> <span class="nx">folderId</span><span class="p">,</span> <span class="nx">onAddMeta</span> <span class="p">})</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">fileInputRef</span> <span class="o">=</span> <span class="nf">useRef</span><span class="p">();</span>
+
+  <span class="kd">const</span> <span class="nx">handleFiles</span> <span class="o">=</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">files</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="k">from</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">files</span><span class="p">);</span>
+
+    <span class="nx">files</span><span class="p">.</span><span class="nf">forEach</span><span class="p">(</span><span class="nx">file</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="kd">const</span> <span class="nx">id</span> <span class="o">=</span> <span class="s2">`</span><span class="p">${</span><span class="nx">file</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="s2">-</span><span class="p">${</span><span class="nx">file</span><span class="p">.</span><span class="nx">size</span><span class="p">}</span><span class="s2">-</span><span class="p">${</span><span class="nb">Date</span><span class="p">.</span><span class="nf">now</span><span class="p">()}</span><span class="s2">`</span><span class="p">;</span>
+
+      <span class="c1">// 1) 메타데이터(이름·크기 등) 상위 컴포넌트에 알림</span>
+      <span class="nf">onAddMeta</span><span class="p">({</span> <span class="nx">id</span><span class="p">,</span> <span class="na">name</span><span class="p">:</span> <span class="nx">file</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span> <span class="na">size</span><span class="p">:</span> <span class="nx">file</span><span class="p">.</span><span class="nx">size</span><span class="p">,</span> <span class="na">progress</span><span class="p">:</span> <span class="mi">0</span> <span class="p">});</span>
+
+      <span class="c1">// 2) API 호출 &amp; cancel 등록</span>
+      <span class="kd">const</span> <span class="nx">formData</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">FormData</span><span class="p">();</span>
+      <span class="nx">formData</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="dl">'</span><span class="s1">file</span><span class="dl">'</span><span class="p">,</span> <span class="nx">file</span><span class="p">);</span>
+
+      <span class="kd">const</span> <span class="p">{</span> <span class="nx">promise</span><span class="p">,</span> <span class="nx">cancel</span> <span class="p">}</span> <span class="o">=</span> <span class="nf">uploadFileApi</span><span class="p">({</span>
+        <span class="nx">formData</span><span class="p">,</span>
+        <span class="nx">folderId</span><span class="p">,</span>
+        <span class="na">onProgress</span><span class="p">:</span> <span class="p">(</span><span class="nx">pct</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nf">onAddMeta</span><span class="p">({</span> <span class="nx">id</span><span class="p">,</span> <span class="na">progress</span><span class="p">:</span> <span class="nx">pct</span> <span class="p">}),</span>
+      <span class="p">});</span>
+
+      <span class="nf">registerCancel</span><span class="p">(</span><span class="nx">id</span><span class="p">,</span> <span class="nx">cancel</span><span class="p">);</span>
+
+      <span class="c1">// 3) 완료 시 원하는 후처리</span>
+      <span class="nx">promise</span><span class="p">.</span><span class="nf">then</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="c1">// 예: 리스트 리패치</span>
+      <span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">err</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="k">if </span><span class="p">(</span><span class="nx">err</span><span class="p">.</span><span class="nx">name</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">CanceledError</span><span class="dl">'</span><span class="p">)</span> <span class="p">{</span>
+          <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="s2">`업로드(</span><span class="p">${</span><span class="nx">id</span><span class="p">}</span><span class="s2">)가 취소되었습니다`</span><span class="p">);</span>
+        <span class="p">}</span>
+      <span class="p">});</span>
+    <span class="p">});</span>
+  <span class="p">};</span>
+
+  <span class="k">return </span><span class="p">(</span>
+    <span class="o">&lt;&gt;</span>
+      <span class="o">&lt;</span><span class="nx">input</span>
+        <span class="nx">type</span><span class="o">=</span><span class="dl">"</span><span class="s2">file</span><span class="dl">"</span>
+        <span class="nx">multiple</span>
+        <span class="nx">style</span><span class="o">=</span>
+        <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="nx">fileInputRef</span><span class="p">}</span>
+        <span class="nx">onChange</span><span class="o">=</span><span class="p">{</span><span class="nx">handleFiles</span><span class="p">}</span>
+      <span class="sr">/</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{()</span> <span class="o">=&gt;</span> <span class="nx">fileInputRef</span><span class="p">.</span><span class="nx">current</span><span class="p">.</span><span class="nf">click</span><span class="p">()}</span><span class="o">&gt;</span>
+        <span class="nx">파일</span> <span class="nx">업로드</span>
+      <span class="o">&lt;</span><span class="sr">/button</span><span class="err">&gt;
+</span>    <span class="o">&lt;</span><span class="sr">/</span><span class="err">&gt;
+</span>  <span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<ul>
+  <li>onAddMeta 콜백 함수로 상위 컴포넌트에 메타데이터만 전송</li>
+  <li>uploadFileApi 가 제공한 cancel 함수를 ID별로 uploadCancelService에 등록합니다.</li>
+</ul>
+
+<h2 id="4-업로드-모달-컴포넌트"><span class="me-2">4. 업로드 모달 컴포넌트</span><a href="#4-업로드-모달-컴포넌트" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<div class="language-javascript highlighter-rouge"><div class="code-header">
+        <span data-label-text="JavaScript"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+</pre></td><td class="rouge-code"><pre><span class="c1">// components/UploadModal.jsx</span>
+<span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">useSelector</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react-redux</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">cancelUpload</span><span class="p">,</span> <span class="nx">cancelAllUploads</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../services/uploadCancelService</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nf">UploadModal</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">uploads</span> <span class="o">=</span> <span class="nf">useSelector</span><span class="p">(</span><span class="nx">state</span> <span class="o">=&gt;</span> <span class="nx">state</span><span class="p">.</span><span class="nx">upload</span><span class="p">.</span><span class="nx">uploadFiles</span><span class="p">);</span>
+
+  <span class="k">return </span><span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">upload-modal</span><span class="dl">"</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">modal-header</span><span class="dl">"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">h3</span><span class="o">&gt;</span><span class="nx">업로드</span> <span class="nx">중</span><span class="o">&lt;</span><span class="sr">/h3</span><span class="err">&gt;
+</span>        <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">cancelAllUploads</span><span class="p">}</span><span class="o">&gt;</span><span class="nx">전체</span> <span class="nx">취소</span><span class="o">&lt;</span><span class="sr">/button</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">modal-body</span><span class="dl">"</span><span class="o">&gt;</span>
+        <span class="p">{</span><span class="nx">uploads</span><span class="p">.</span><span class="nf">map</span><span class="p">(</span><span class="nx">f</span> <span class="o">=&gt;</span> <span class="p">(</span>
+          <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">key</span><span class="o">=</span><span class="p">{</span><span class="nx">f</span><span class="p">.</span><span class="nx">id</span><span class="p">}</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">upload-item</span><span class="dl">"</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nx">span</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">file-name</span><span class="dl">"</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">f</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/span</span><span class="err">&gt;
+</span>            <span class="o">&lt;</span><span class="nx">progress</span> <span class="nx">value</span><span class="o">=</span><span class="p">{</span><span class="nx">f</span><span class="p">.</span><span class="nx">progress</span><span class="p">}</span> <span class="nx">max</span><span class="o">=</span><span class="p">{</span><span class="mi">100</span><span class="p">}</span> <span class="sr">/</span><span class="err">&gt;
+</span>            <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{()</span> <span class="o">=&gt;</span> <span class="nf">cancelUpload</span><span class="p">(</span><span class="nx">f</span><span class="p">.</span><span class="nx">id</span><span class="p">)}</span><span class="o">&gt;</span><span class="nx">취소</span><span class="o">&lt;</span><span class="sr">/button</span><span class="err">&gt;
+</span>          <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>        <span class="p">))}</span>
+      <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>    <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>  <span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<ul>
+  <li>cancelUpload(f.id) 로 업로드 파일 개별로 취소</li>
+  <li>cancelAllUploads() 로 전체 취소가 가능합니다.</li>
+</ul>
+
+<h2 id="5-전체-구조-요약"><span class="me-2">5. 전체 구조 요약</span><a href="#5-전체-구조-요약" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<div class="language-text highlighter-rouge"><div class="code-header">
+        <span data-label-text="Text"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>App
+ └─ UploadManager            // 파일 선택 + API 호출 + cancel 등록
+ └─ UploadModal              // 전역 업로드 현황 + 취소 버튼
+</pre></td></tr></tbody></table></code></div></div>
+
+<ol>
+  <li>UploadManager:
+    <ul>
+      <li>파일 선택 -&gt; uploadFileApi 호출 -&gt; (promise, cancel)반환</li>
+      <li>registerCancel(id, cancel)으로 취소 함수 저장</li>
+      <li>onAddMeta 로 Redux 스토더에 {id, name, size, progress} 메타데이터 전송</li>
+    </ul>
+  </li>
+  <li>UploadModal:
+    <ul>
+      <li>Redux에서 uploadFiles 구독 -&gt; 리스트 렌더링</li>
+      <li>cancelUpload(id) / cancelAllUploads() 호출 -&gt; 실체 HTTP 요청 중단</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="결론"><span class="me-2">결론</span><a href="#결론" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>이렇게 Axios AbortController + 모듈 싱클톤 서비스의 조합으로, 대용량 파일 업로드 중 언제든 취소할 수 있습니다.</p>
+
 
   </div>
 
@@ -884,8 +1098,8 @@ if (decoded.exp &amp;&amp; decoded.exp &lt; currentTime) {
       <div class="post-meta mb-3">
         <i class="far fa-folder-open fa-fw me-1"></i>
         
-          <a href="/categories/react-native-expo/">React Native Expo</a>,
-          <a href="/categories/%EA%B7%A4%ED%86%A1/">귤톡</a>
+          <a href="/categories/react/">React</a>,
+          <a href="/categories/cloud-storage/">Cloud Storage</a>
       </div>
     
 
@@ -895,34 +1109,44 @@ if (decoded.exp &amp;&amp; decoded.exp &lt; currentTime) {
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
+            href="/tags/html/"
+            class="post-tag no-text-decoration"
+          >html</a>
+        
+          <a
             href="/tags/react/"
             class="post-tag no-text-decoration"
           >react</a>
         
           <a
-            href="/tags/native/"
+            href="/tags/javascript/"
             class="post-tag no-text-decoration"
-          >native</a>
+          >javascript</a>
         
           <a
-            href="/tags/expo/"
+            href="/tags/css/"
             class="post-tag no-text-decoration"
-          >expo</a>
+          >css</a>
         
           <a
-            href="/tags/jwt/"
+            href="/tags/file/"
             class="post-tag no-text-decoration"
-          >jwt</a>
+          >file</a>
         
           <a
-            href="/tags/token/"
+            href="/tags/upload/"
             class="post-tag no-text-decoration"
-          >token</a>
+          >upload</a>
         
           <a
-            href="/tags/%EA%B2%80%EC%A6%9D/"
+            href="/tags/modal/"
             class="post-tag no-text-decoration"
-          >검증</a>
+          >modal</a>
+        
+          <a
+            href="/tags/redux/"
+            class="post-tag no-text-decoration"
+          >redux</a>
         
       </div>
     
@@ -958,21 +1182,21 @@ if (decoded.exp &amp;&amp; decoded.exp &lt; currentTime) {
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=React%20Native%20Expo%EC%97%90%EC%84%9C%20JWT%20%ED%86%A0%ED%81%B0%20%EA%B2%80%EC%A6%9D%ED%95%98%EA%B8%B0%20-%20js%20tech%20blog&url=https%3A%2F%2Fcpzzansu.github.io%2Fposts%2Fjwt-token-decode%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=React%20%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%20%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80%20%EB%8C%80%EC%9A%A9%EB%9F%89%20%ED%8C%8C%EC%9D%BC%20%EC%97%85%EB%A1%9C%EB%93%9C%20%EC%B7%A8%EC%86%8C%20%EA%B8%B0%EB%8A%A5%20%EA%B5%AC%ED%98%84%20-%20js%20tech%20blog&url=https%3A%2F%2Fcpzzansu.github.io%2Fposts%2Freact-file-upload%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=React%20Native%20Expo%EC%97%90%EC%84%9C%20JWT%20%ED%86%A0%ED%81%B0%20%EA%B2%80%EC%A6%9D%ED%95%98%EA%B8%B0%20-%20js%20tech%20blog&u=https%3A%2F%2Fcpzzansu.github.io%2Fposts%2Fjwt-token-decode%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=React%20%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%20%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80%20%EB%8C%80%EC%9A%A9%EB%9F%89%20%ED%8C%8C%EC%9D%BC%20%EC%97%85%EB%A1%9C%EB%93%9C%20%EC%B7%A8%EC%86%8C%20%EA%B8%B0%EB%8A%A5%20%EA%B5%AC%ED%98%84%20-%20js%20tech%20blog&u=https%3A%2F%2Fcpzzansu.github.io%2Fposts%2Freact-file-upload%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=https%3A%2F%2Fcpzzansu.github.io%2Fposts%2Fjwt-token-decode%2F&text=React%20Native%20Expo%EC%97%90%EC%84%9C%20JWT%20%ED%86%A0%ED%81%B0%20%EA%B2%80%EC%A6%9D%ED%95%98%EA%B8%B0%20-%20js%20tech%20blog" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=https%3A%2F%2Fcpzzansu.github.io%2Fposts%2Freact-file-upload%2F&text=React%20%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%20%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80%20%EB%8C%80%EC%9A%A9%EB%9F%89%20%ED%8C%8C%EC%9D%BC%20%EC%97%85%EB%A1%9C%EB%93%9C%20%EC%B7%A8%EC%86%8C%20%EA%B8%B0%EB%8A%A5%20%EA%B5%AC%ED%98%84%20-%20js%20tech%20blog" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -2305,19 +2529,19 @@ if (decoded.exp &amp;&amp; decoded.exp &lt; currentTime) {
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
 
 
 
@@ -2331,62 +2555,6 @@ if (decoded.exp &amp;&amp; decoded.exp &lt; currentTime) {
   <aside id="related-posts" aria-labelledby="related-label">
     <h3 class="mb-4" id="related-label">관련된 글</h3>
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
-      
-        <article class="col">
-          <a href="/posts/develop-diary-gyooltalk/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1742743800"
-  data-df="YYYY/MM/DD"
-  
->
-  2025/03/24
-</time>
-
-              <h4 class="pt-0 my-2">귤톡 개발일지 - 채팅방 데이터 설계 변경 이야기</h4>
-              <div class="text-muted">
-                <p>데이터 설계 변경의 무서움</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/react-file-upload/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1745809260"
-  data-df="YYYY/MM/DD"
-  
->
-  2025/04/28
-</time>
-
-              <h4 class="pt-0 my-2">React 클라우드 스토리지 대용량 파일 업로드 취소 기능 구현</h4>
-              <div class="text-muted">
-                <p>대용량 파일을 업로드 할 때, &quot;취소&quot; 할 수 있도록 구현하기</p>
-              </div>
-            </div>
-          </a>
-        </article>
       
         <article class="col">
           <a href="/posts/java-spring-boot-file-save/" class="post-preview card h-100">
@@ -2416,6 +2584,62 @@ if (decoded.exp &amp;&amp; decoded.exp &lt; currentTime) {
           </a>
         </article>
       
+        <article class="col">
+          <a href="/posts/create-file-upload-modal/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1745550060"
+  data-df="YYYY/MM/DD"
+  
+>
+  2025/04/25
+</time>
+
+              <h4 class="pt-0 my-2">끊김 없는 파일 업로드를 위한 React 최상단 Modal 배치하기</h4>
+              <div class="text-muted">
+                <p>React + Redux 기반의 최상단 모달 구조를 통해, 화면 어디로 이동해도 끊김 없이 업로드 상황을 관리하는 방법을 소개합니다.</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/develop-diary-gyooltalk/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1742743800"
+  data-df="YYYY/MM/DD"
+  
+>
+  2025/03/24
+</time>
+
+              <h4 class="pt-0 my-2">귤톡 개발일지 - 채팅방 데이터 설계 변경 이야기</h4>
+              <div class="text-muted">
+                <p>데이터 설계 변경의 무서움</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
     </nav>
   </aside>
   <!-- #related-posts -->
@@ -2431,22 +2655,18 @@ if (decoded.exp &amp;&amp; decoded.exp &lt; currentTime) {
 
   
     <a
-      href="/posts/team-leaders-of-sillicon-valley-1/"
+      href="/posts/java-spring-boot-file-save/"
       class="btn btn-outline-primary"
       aria-label="이전 글"
     >
-      <p><독서노트>실리콘밸리의 팀장들(1)</p>
+      <p>자바(Spring Boot)를 활용한 클라우드 스토리지 파일 저장 구현하기</p>
     </a>
   
 
   
-    <a
-      href="/posts/develop-diary-gyooltalk/"
-      class="btn btn-outline-primary"
-      aria-label="다음 글"
-    >
-      <p>귤톡 개발일지 - 채팅방 데이터 설계 변경 이야기</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="다음 글">
+      <p>-</p>
+    </div>
   
 </nav>
 

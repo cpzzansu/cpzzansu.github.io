@@ -1,5 +1,13 @@
 [
   {
+    "title": "React 클라우드 스토리지 대용량 파일 업로드 취소 기능 구현",
+    "url": "/posts/react-file-upload/",
+    "categories": "React, Cloud Storage",
+    "tags": "html, react, javascript, css, file, upload, modal, redux",
+    "date": "2025-04-28 12:01:00 +0900",
+    "content": "대용량 파일을 업로드 할 때, &quot;취소&quot; 할 수 있도록 구현하기"
+  },
+  {
     "title": "자바(Spring Boot)를 활용한 클라우드 스토리지 파일 저장 구현하기",
     "url": "/posts/java-spring-boot-file-save/",
     "categories": "React, Cloud Storage",

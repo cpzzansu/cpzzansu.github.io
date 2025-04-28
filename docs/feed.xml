@@ -4,7 +4,7 @@
   <id>https://cpzzansu.github.io/</id>
   <title>js tech blog</title>
   <subtitle>주니어 개발자의 도전과 성장, 그리고 실전 경험을 담은 테크 블로그입니다. 최신 기술 동향, 문제 해결 팁, 그리고 개발자로서의 꾸준한 학습 여정을 함께 공유합니다.</subtitle>
-  <updated>2025-04-27T01:54:40+09:00</updated>
+  <updated>2025-04-28T12:03:40+09:00</updated>
   <author>
     <name>김준수</name>
     <uri>https://cpzzansu.github.io/</uri>
@@ -17,6 +17,32 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>React 클라우드 스토리지 대용량 파일 업로드 취소 기능 구현</title>
+    <link href="https://cpzzansu.github.io/posts/react-file-upload/" rel="alternate" type="text/html" title="React 클라우드 스토리지 대용량 파일 업로드 취소 기능 구현" />
+    <published>2025-04-28T12:01:00+09:00</published>
+  
+    <updated>2025-04-28T12:01:00+09:00</updated>
+  
+    <id>https://cpzzansu.github.io/posts/react-file-upload/</id>
+    <content type="text/html" src="https://cpzzansu.github.io/posts/react-file-upload/" />
+    <author>
+      <name>author_js</name>
+    </author>
+
+  
+    
+    <category term="React" />
+    
+    <category term="Cloud Storage" />
+    
+  
+
+  <summary>대용량 파일을 업로드 할 때, &amp;quot;취소&amp;quot; 할 수 있도록 구현하기</summary>
+
+  </entry>
 
   
   <entry>
@@ -119,32 +145,6 @@
   
 
   <summary>Jwt token 검증 custom 필터 세팅</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>MapStruct를 이용한 DTO 매핑 자동화(feat.관심사의 분리)</title>
-    <link href="https://cpzzansu.github.io/posts/mapstruct/" rel="alternate" type="text/html" title="MapStruct를 이용한 DTO 매핑 자동화(feat.관심사의 분리)" />
-    <published>2025-03-24T17:55:00+09:00</published>
-  
-    <updated>2025-03-24T17:55:00+09:00</updated>
-  
-    <id>https://cpzzansu.github.io/posts/mapstruct/</id>
-    <content type="text/html" src="https://cpzzansu.github.io/posts/mapstruct/" />
-    <author>
-      <name>author_js</name>
-    </author>
-
-  
-    
-    <category term="JAVA" />
-    
-    <category term="Spring Boot" />
-    
-  
-
-  <summary>MapStruct를 이용한 DTO 매핑 자동화를 이용해서 우리 한 번 신나게 달려가봐요!</summary>
 
   </entry>
 
