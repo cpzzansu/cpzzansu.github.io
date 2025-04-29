@@ -4,7 +4,7 @@
   <id>https://cpzzansu.github.io/</id>
   <title>js tech blog</title>
   <subtitle>주니어 개발자의 도전과 성장, 그리고 실전 경험을 담은 테크 블로그입니다. 최신 기술 동향, 문제 해결 팁, 그리고 개발자로서의 꾸준한 학습 여정을 함께 공유합니다.</subtitle>
-  <updated>2025-04-28T12:03:40+09:00</updated>
+  <updated>2025-04-29T17:33:26+09:00</updated>
   <author>
     <name>김준수</name>
     <uri>https://cpzzansu.github.io/</uri>
@@ -17,6 +17,32 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>React + Spring Boot 기반 클라우드 스토리지 “파일 다운로드” 기능 구현</title>
+    <link href="https://cpzzansu.github.io/posts/cloud-storage-service-file-download/" rel="alternate" type="text/html" title="React + Spring Boot 기반 클라우드 스토리지 “파일 다운로드” 기능 구현" />
+    <published>2025-04-29T12:01:00+09:00</published>
+  
+    <updated>2025-04-29T12:01:00+09:00</updated>
+  
+    <id>https://cpzzansu.github.io/posts/cloud-storage-service-file-download/</id>
+    <content type="text/html" src="https://cpzzansu.github.io/posts/cloud-storage-service-file-download/" />
+    <author>
+      <name>author_js</name>
+    </author>
+
+  
+    
+    <category term="React" />
+    
+    <category term="Cloud Storage" />
+    
+  
+
+  <summary>선택한 파일을 ZIP으로 묶어 한번에 내려받는 기능을 React와 Spring Boot로 구현해봤습니다. Blob처리, ZipOutputStream 스트리밍, HTTP 요청, 응답을 활용했습니다.</summary>
+
+  </entry>
 
   
   <entry>
@@ -119,32 +145,6 @@
   
 
   <summary>URL(String) 생성자의 Deprecation과 URI의 활용</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>JwtAuthenticationFilter를 이용한 Spring Security JWT 인증 필터 설정 방법</title>
-    <link href="https://cpzzansu.github.io/posts/spring-boot-security-custom-filter/" rel="alternate" type="text/html" title="JwtAuthenticationFilter를 이용한 Spring Security JWT 인증 필터 설정 방법" />
-    <published>2025-03-25T01:49:00+09:00</published>
-  
-    <updated>2025-03-25T01:49:00+09:00</updated>
-  
-    <id>https://cpzzansu.github.io/posts/spring-boot-security-custom-filter/</id>
-    <content type="text/html" src="https://cpzzansu.github.io/posts/spring-boot-security-custom-filter/" />
-    <author>
-      <name>author_js</name>
-    </author>
-
-  
-    
-    <category term="JAVA" />
-    
-    <category term="Spring Boot" />
-    
-  
-
-  <summary>Jwt token 검증 custom 필터 세팅</summary>
 
   </entry>
 
